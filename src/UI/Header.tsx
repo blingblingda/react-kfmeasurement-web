@@ -1,9 +1,12 @@
+import * as React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-const Header = () => {
+interface IHeaderProps {}
+
+const Header: React.FunctionComponent<IHeaderProps> = (props) => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
