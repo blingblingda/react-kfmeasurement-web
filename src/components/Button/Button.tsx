@@ -1,0 +1,17 @@
+import React from "react";
+import Button from 'react-bootstrap/Button';
+
+interface IButtonProps {
+  children: string;
+  onClick: () => void;
+}
+
+const MyButton =({children, onClick}: IButtonProps) => {
+  return (
+    <>
+      <Button variant="outline-success" onClick={onClick}>{children}</Button>{' '}
+    </>
+  );
+}
+
+export default MyButton;
