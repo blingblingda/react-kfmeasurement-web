@@ -8,14 +8,18 @@ import * as React from "react";
 // };
 
 import { Container, Row, Col } from "react-bootstrap";
-import "./Footer.css"
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer mt-auto py-3">
-      <Container className="footer-bg">
+    <footer className="footer mt-auto pt-5">
+      <div className="footer-top pt-5">
+      <Container>
         <Row>
-          <Col md={4}>
+          <Col md={3}>
+            <h5>Logo</h5>
+          </Col>
+          <Col md={3}>
             <h5>Products</h5>
             <ul className="list-unstyled">
               <li>
@@ -29,7 +33,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col md={4}>
+          <Col md={3}>
             <h5>Case</h5>
             <ul className="list-unstyled">
               <li>
@@ -43,15 +47,22 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
+          <Col md={3}>
+            <h5>Button</h5>
+          </Col>
         </Row>
+      </Container>
+      </div>
+      <div className="footer-bottom py-1">
+      <Container className="footer-bottom-bg">
         <Row>
-          <Col md={4}>
+          <Col md={6} xs={6}>
             <p>
               <a href="">Terms & Conditions</a>
             </p>
           </Col>
 
-          <Col md={4}>
+          <Col md={2} xs={6}>
             <div className="social_media">
               <a href="">
                 <svg
@@ -77,13 +88,14 @@ const Footer = () => {
               </a>
             </div>
           </Col>
-          <Col>
+          <Col md={2} xs={6}>
             <p className="text-muted text-center">
               &copy; KFCK {new Date().getFullYear()}
             </p>
           </Col>
         </Row>
       </Container>
+      </div>
     </footer>
   );
 };

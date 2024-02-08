@@ -1,3 +1,6 @@
-.footer-bg {
-  background-color: #98ff9880
+.footer-top {
+  background-color: #093c0980
+}
+.footer-bottom {
+  background-color: rgba(7, 41, 23, 0.227);
 }
