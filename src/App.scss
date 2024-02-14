@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$custom-colors: (
+  "dark-green": #004A60,
+  "light-green": #7099A5,
+  "light-grey": #E1EAEC,
+  "white": #FFFFFF
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "~bootstrap/scss/bootstrap";

@@ -9,7 +9,7 @@ interface IButtonProps {
 const MyButton =({children, onClick}: IButtonProps) => {
   return (
     <>
-      <Button variant="outline-success" onClick={onClick}>{children}</Button>{' '}
+      <Button variant="outline-dark-green" onClick={onClick}>{children}</Button>{' '}
     </>
   );
 }

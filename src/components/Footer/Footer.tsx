@@ -1,14 +1,8 @@
 import * as React from "react";
 
-// interface IFooterProps {
-// }
-
-// const Footer = ({ }: IFooterProps) => {
-//   return <div>Footer</div>;
-// };
 
 import { Container, Row, Col } from "react-bootstrap";
-import "./Footer.css";
+import "./Footer.scss";
 
 const Footer = () => {
   return (
