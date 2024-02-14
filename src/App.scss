@@ -10,4 +10,11 @@ $custom-colors: (
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+:root {
+  --dark-green: #004A60;
+  --light-green: #7099A5;
+  --light-grey: #E1EAEC;
+  --white: #FFFFFF;
+}
+
 @import "~bootstrap/scss/bootstrap";

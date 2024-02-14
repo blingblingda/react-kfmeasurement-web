@@ -6,24 +6,24 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer className="footer mt-auto pt-5">
+    <footer className="footer mt-auto pt-5 text-white">
       <div className="footer-top pt-5">
       <Container>
         <Row>
           <Col md={3}>
-            <h5>Logo</h5>
+            <h5>KFCK</h5>
           </Col>
           <Col md={3}>
             <h5>Products</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="/Product1">Product1</a>
+                <a href="/Product1" className="link-white">Product1</a>
               </li>
               <li>
-                <a href="/Product2">Product2</a>
+                <a href="/Product2" className="link-white">Product2</a>
               </li>
               <li>
-                <a href="/Product3">Product3</a>
+                <a href="/Product3" className="link-white">Product3</a>
               </li>
             </ul>
           </Col>
@@ -31,13 +31,13 @@ const Footer = () => {
             <h5>Case</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="/Case1">Case1</a>
+                <a href="/Case1" className="link-white">Case1</a>
               </li>
               <li>
-                <a href="/Case2">Case2</a>
+                <a href="/Case2" className="link-white">Case2</a>
               </li>
               <li>
-                <a href="/Case3">Case3</a>
+                <a href="/Case3" className="link-white">Case3</a>
               </li>
             </ul>
           </Col>
@@ -52,7 +52,7 @@ const Footer = () => {
         <Row>
           <Col md={6} xs={6}>
             <p>
-              <a href="">Terms & Conditions</a>
+              <a href="" className="link-white">Terms & Conditions</a>
             </p>
           </Col>
 

@@ -1,7 +1,10 @@
 
 .footer-top {
-  background-color: #004A60;
+  background-color: var(--dark-green);
 }
 .footer-bottom {
-  background-color: #7099A5;
+  background-color: var(--light-green);
+}
+.link-white{
+  text-decoration: none;
 }
