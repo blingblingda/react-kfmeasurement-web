@@ -2,19 +2,19 @@
 @import "~bootstrap/scss/variables";
 
 $custom-colors: (
-  "dark-green": #004A60,
-  "light-green": #7099A5,
-  "light-grey": #E1EAEC,
-  "white": #FFFFFF
+  "dark-green": #004a60,
+  "light-green": #7099a5,
+  "light-grey": #e1eaec,
+  "white": #ffffff,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 :root {
-  --dark-green: #004A60;
-  --light-green: #7099A5;
-  --light-grey: #E1EAEC;
-  --white: #FFFFFF;
+  --dark-green: #004a60;
+  --light-green: #7099a5;
+  --light-grey: #e1eaec;
+  --white: #ffffff;
 }
 
 @import "~bootstrap/scss/bootstrap";

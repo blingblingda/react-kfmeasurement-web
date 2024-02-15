@@ -1,5 +1,5 @@
 import { Icon0Circle, Icon1Circle, Icon2Circle } from "react-bootstrap-icons";
-import Symbol from "../Symbol/Symbol";
+import Symbol from "./Symbol";
 import { Col, Container, Row } from "react-bootstrap";
 
 interface Props {
