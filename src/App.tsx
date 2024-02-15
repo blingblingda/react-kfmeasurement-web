@@ -10,7 +10,7 @@ const App = () => {
     <>
       <Header />
       <MyButton onClick={()=>console.log('clicked')}>My Button</MyButton>
-      <Symbol iconName={ 'Icon9CircleFill'}  text={"descripton of icon"}/>
+      <Symbol title='My Title'>This is my symbol description</Symbol>
       <Slider />
       <Footer />
     </>
