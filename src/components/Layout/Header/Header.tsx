@@ -3,14 +3,15 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Button from "../../UI/Button/Button";
+
 import "./Header.css";
+import MyButton from "../../UI/Button/Button";
 
 interface IHeaderProps {}
 
 const Header: React.FunctionComponent<IHeaderProps> = (props) => {
   return (
-    <Navbar expand="lg" className="bg-body-transparent navbar-underline mb-3">
+    <Navbar id="top" expand="lg" className="bg-body-transparent navbar-underline mb-3">
       <Container>
         <Navbar.Brand href="#home" className="text-dark-green">
           KFCK
@@ -56,8 +57,7 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Button onClick={() => console.log("clicked")}>Contact Us</Button>
-        <Button onClick={() => console.log("clicked")}>Quote Here</Button>
+        <MyButton style="dark" onClick={() => console.log("clicked")}>Contact Us</MyButton>
       </Container>
     </Navbar>
   );

@@ -1,16 +1,18 @@
+import { ReactHTMLElement } from "react";
 import Button from "react-bootstrap/Button";
 
 interface IButtonProps {
   children: string;
+  style: "dark" | "light";
   onClick: () => void;
 }
 
-const MyButton = ({ children, onClick }: IButtonProps) => {
+const MyButton = ({ children, style, onClick }: IButtonProps) => {
   return (
     <>
-      <Button variant="outline-dark-green" onClick={onClick}>
+      <Button variant={style == "dark" ? "outline-dark-green" : "outline-white"} onClick={onClick}>
         {children}
-      </Button>{" "}
+      </Button>
     </>
   );
 };
