@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <MyButton onClick={() => console.log("clicked")}>My Button</MyButton>
+      <MyButton style="dark" onClick={() => console.log("clicked")}>My Button</MyButton>
       <Feature title="My First Feature" />
       <Slider />
       <Footer />
