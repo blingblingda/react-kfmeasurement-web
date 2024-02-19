@@ -3,6 +3,8 @@ import * as React from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.scss";
+import { ArrowUp } from "react-bootstrap-icons";
+import MyButton from "../../UI/Button/Button";
 
 const Footer = () => {
   return (
@@ -41,8 +43,9 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col md={3}>
-            <h5>Button</h5>
+          <Col md={3}>            
+            <a href="#top" className="link-white clearfix mb-3 d-block" id="scroll-top"><ArrowUp /> Back to Top </a>
+            <MyButton style="light" onClick={() => console.log("clicked")}>Contact Us</MyButton>
           </Col>
         </Row>
       </Container>
