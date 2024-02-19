@@ -23,17 +23,17 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
             >
               <NavDropdown.Item as="div" className="text-dark-green">
                 <Container>
-                  <Row>
-                    <Col xs={6} md={4}>
-                      <ShowCase />
-                    </Col>
-                    <Col xs={6} md={4}>
-                      <ShowCase />
-                    </Col>
-                    <Col xs={6} md={4}>
-                      <ShowCase />
-                    </Col>
-                  </Row>
+                  <ShowCase />
+                </Container>
+              </NavDropdown.Item>
+              <NavDropdown.Item as="div" className="text-dark-green">
+                <Container>
+                  <ShowCase />
+                </Container>
+              </NavDropdown.Item>
+              <NavDropdown.Item as="div" className="text-dark-green">
+                <Container>
+                  <ShowCase />
                 </Container>
               </NavDropdown.Item>
             </NavDropdown>
