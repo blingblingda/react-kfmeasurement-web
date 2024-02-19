@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Navbar, Nav, NavDropdown, Row, Col } from "react-bootstrap";
-import Button from "../../UI/Button/Button";
+import WebButton from "../../UI/Button/WebButton";
 import ShowCase from "../../UI/Card/Card";
 import "./Header.css";
 
@@ -57,7 +57,7 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Button onClick={() => console.log("clicked")}>Contact Us</Button>
+        <WebButton style="dark" onClick={() => console.log("clicked")}>Contact Us</WebButton>
       </Container>
     </Navbar>
   );

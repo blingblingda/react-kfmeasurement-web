@@ -4,7 +4,7 @@ import * as React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.scss";
 import { ArrowUp } from "react-bootstrap-icons";
-import MyButton from "../../UI/Button/Button";
+import MyButton from "../../UI/Button/WebButton";
 
 const Footer = () => {
   return (

@@ -1,4 +1,3 @@
-import { ReactHTMLElement } from "react";
 import Button from "react-bootstrap/Button";
 
 interface IButtonProps {
@@ -7,7 +6,7 @@ interface IButtonProps {
   onClick: () => void;
 }
 
-const MyButton = ({ children, style, onClick }: IButtonProps) => {
+const WebButton = ({ children, style, onClick }: IButtonProps) => {
   return (
     <>
       <Button variant={style == "dark" ? "outline-dark-green" : "outline-white"} onClick={onClick}>
@@ -17,4 +16,4 @@ const MyButton = ({ children, style, onClick }: IButtonProps) => {
   );
 };
 
-export default MyButton;
+export default WebButton;
