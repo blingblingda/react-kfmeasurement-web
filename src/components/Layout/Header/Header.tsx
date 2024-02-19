@@ -1,42 +1,47 @@
-import * as React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import React from "react";
+import { Container, Navbar, Nav, NavDropdown, Row, Col } from "react-bootstrap";
 import Button from "../../UI/Button/Button";
+import ShowCase from "../../UI/Card/Card";
 import "./Header.css";
 
 interface IHeaderProps {}
 
 const Header: React.FunctionComponent<IHeaderProps> = (props) => {
   return (
-    <Navbar expand="lg" className="bg-body-transparent navbar-underline mb-3">
+    <Navbar expand="lg" className="bg-body-transparent navbar-underline">
       <Container>
-        <Navbar.Brand href="#home" className="text-dark-green">
-          KFCK
-        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home" className="text-dark-green">
-              Home
-            </Nav.Link>
-            <NavDropdown title="Products" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1" className="text-dark-green">
-                Product1
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" className="text-dark-green">
-                Product2
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3" className="text-dark-green">
-                Product3
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4" className="text-dark-green">
-                Product4
+          <Navbar.Brand href="#home" className="text-dark-green logo-style">
+            KFCK
+          </Navbar.Brand>
+          <Nav className="mx-auto">
+            <NavDropdown
+              title="Products"
+              id="basic-nav-dropdown"
+              className="mx-3 nav-dropdown-title"
+            >
+              <NavDropdown.Item as="div" className="text-dark-green">
+                <Container>
+                  <Row>
+                    <Col xs={6} md={4}>
+                      <ShowCase />
+                    </Col>
+                    <Col xs={6} md={4}>
+                      <ShowCase />
+                    </Col>
+                    <Col xs={6} md={4}>
+                      <ShowCase />
+                    </Col>
+                  </Row>
+                </Container>
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Cases" id="basic-nav-dropdown">
+            <NavDropdown
+              title="Cases"
+              id="basic-nav-dropdown"
+              className="mx-3 nav-dropdown-title"
+            >
               <NavDropdown.Item href="#action/3.1" className="text-dark-green">
                 Case1
               </NavDropdown.Item>
@@ -46,18 +51,13 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
               <NavDropdown.Item href="#action/3.3" className="text-dark-green">
                 Case3
               </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4" className="text-dark-green">
-                Case4
-              </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link" className="text-dark-green">
-              Download
+            <Nav.Link href="#link" className="text-dark-green link-style mx-3">
+              Why KFCK
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Button onClick={() => console.log("clicked")}>Contact Us</Button>
-        <Button onClick={() => console.log("clicked")}>Quote Here</Button>
       </Container>
     </Navbar>
   );
