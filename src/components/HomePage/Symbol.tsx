@@ -1,17 +1,18 @@
-import { ReactNode } from "react";
+import React from "react";
+import { Icon } from "react-bootstrap-icons";
 
 interface Props {
-  children: ReactNode; 
+  icon: Icon; 
   text: string;
+  size: number;
 }
-const Symbol = ({children, text}: Props) => {
+const Symbol = ({icon, text, size}: Props) => {
   return (
     <>
-      <div className="text-center">
-        {children}
-        <p>{text}</p>
+      <div className="text-center ">
+        {React.createElement(icon, {size})}
+        <p className="mt-3">{text}</p>
       </div>
-
     </>
   );
 };
