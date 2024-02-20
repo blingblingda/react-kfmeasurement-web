@@ -81,7 +81,7 @@ const Header = (props: HeaderProps) => {
               className="mx-3 nav-dropdown-title custom-nav-dropdown"
             >
               {products.map((product) => (
-                <NavDropdown.Item as="div">
+                <NavDropdown.Item key={product.id}>
                   <HeaderCard product={product} />
                 </NavDropdown.Item>
               ))}
@@ -92,7 +92,7 @@ const Header = (props: HeaderProps) => {
               className="mx-3 nav-dropdown-title custom-nav-dropdown"
             >
               {cases.map((product) => (
-                <NavDropdown.Item as="div">
+                <NavDropdown.Item key={product.id}>
                   <HeaderCard product={product} />
                 </NavDropdown.Item>
               ))}
