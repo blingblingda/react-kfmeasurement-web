@@ -1,6 +1,34 @@
-import { Icon0Circle, Icon1Circle, Icon2Circle } from "react-bootstrap-icons";
+import { Award, Database, Key, People, ShieldCheck } from "react-bootstrap-icons";
 import Symbol from "./Symbol";
 import { Col, Container, Row } from "react-bootstrap";
+
+
+const reasons = [{
+  icon: Award,
+  text: "This is first reason",
+  size: 40
+},
+{
+  icon: Database,
+  text: "This is second reason",
+  size: 40
+},
+{
+  icon: Key,
+  text: "This is third reason",
+  size: 40
+},
+{
+  icon: People,
+  text: "This is forth reason",
+  size: 40
+},
+{
+  icon: ShieldCheck,
+  text: "This is fifth reason",
+  size: 40
+},
+];
 
 interface Props {
   title: string;
@@ -14,26 +42,16 @@ const Feature = ({ title }: Props) => {
         className="symbleWithText text-center mt-5 pt-5 pb-5 text-dark-green text-bg-light-grey"
       >
         <Row className="justify-content-md-center mb-5">
-          <Col md={3}>
+          <Col>
             <h2>{title}</h2>
           </Col>
         </Row>
         <Row className="justify-content-md-center">
-          <Col md={3}>
-            <Symbol text="this is my first symbol">
-              <Icon0Circle className="m-3" />
-            </Symbol>
-          </Col>
-          <Col md={3}>
-            <Symbol text="this is my second symbol">
-              <Icon1Circle className="m-3" />
-            </Symbol>
-          </Col>
-          <Col md={3}>
-            <Symbol text="this is my third symbol">
-              <Icon2Circle className="m-3" />
-            </Symbol>
-          </Col>
+        {reasons.map((reason, index) => (
+          <Col key={index}>
+            <Symbol text={reason.text} icon={reason.icon} size={reason.size}/>
+           </Col>
+          ))}
         </Row>
       </Container>
     </>
