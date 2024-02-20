@@ -1,20 +1,21 @@
 import Card from "react-bootstrap/Card";
 import WebButton from "../Button/WebButton";
+import Product from "../../../models/product";
 
-interface Props {
-  name: string,
-  description: string,
-  img: string
+interface StarCardProps {
+  product: Product;
 }
 
-const StarCard= ({name, description, img}: Props) => {
+const StarCard = ({ product }: StarCardProps) => {
   return (
-    <Card border="light" text="dark-green">   
-      <Card.Title>{name}</Card.Title>
-      <Card.Img variant="top" src={img} />
+    <Card border="light" text="dark-green">
+      <Card.Title>{product.name}</Card.Title>
+      <Card.Img variant="top" src={product.imgSrc} />
       <Card.Body>
-        <Card.Text >{description}</Card.Text>
-        <WebButton style="dark" onClick={() => console.log("clicked")}>Learn More</WebButton>
+        <Card.Text>{product.description}</Card.Text>
+        <WebButton style="dark" onClick={() => console.log("clicked")}>
+          Learn More
+        </WebButton>
       </Card.Body>
     </Card>
   );
