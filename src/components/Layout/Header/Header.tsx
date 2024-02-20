@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Navbar, Nav, NavDropdown, Row, Col } from "react-bootstrap";
+import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import WebButton from "../../UI/Button/WebButton";
 import HeaderCard from "../../UI/Card/HeaderCard";
 import "./Header.css";
@@ -8,6 +8,10 @@ import productSeriesImg1 from "../../../assets/productSeries1.png";
 import productSeriesImg2 from "../../../assets/productSeries2.png";
 import productSeriesImg3 from "../../../assets/productSeries3.png";
 import productSeriesImg4 from "../../../assets/productSeries4.png";
+import caseImg1 from "../../../assets/case1.png";
+import caseImg2 from "../../../assets/case2.png";
+import caseImg3 from "../../../assets/case3.png";
+import caseImg4 from "../../../assets/case4.png";
 
 interface HeaderProps {}
 
@@ -34,6 +38,29 @@ const products: Product[] = [
   },
 ];
 
+const cases: Product[] = [
+  {
+    id: 1,
+    imgSrc: caseImg1,
+    description: "GuangWang pty ltd",
+  },
+  {
+    id: 2,
+    imgSrc: caseImg2,
+    description: "Jizhong Energy",
+  },
+  {
+    id: 3,
+    imgSrc: caseImg3,
+    description: "Huaibei Mining",
+  },
+  {
+    id: 4,
+    imgSrc: caseImg4,
+    description: "Yankuang Energy Group",
+  },
+];
+
 const Header = (props: HeaderProps) => {
   return (
     <Navbar
@@ -51,10 +78,10 @@ const Header = (props: HeaderProps) => {
             <NavDropdown
               title="Products"
               id="basic-nav-dropdown"
-              className="mx-3 nav-dropdown-title"
+              className="mx-3 nav-dropdown-title custom-nav-dropdown"
             >
               {products.map((product) => (
-                <NavDropdown.Item className="text-dark-green">
+                <NavDropdown.Item as="div">
                   <HeaderCard product={product} />
                 </NavDropdown.Item>
               ))}
@@ -62,17 +89,13 @@ const Header = (props: HeaderProps) => {
             <NavDropdown
               title="Cases"
               id="basic-nav-dropdown"
-              className="mx-3 nav-dropdown-title"
+              className="mx-3 nav-dropdown-title custom-nav-dropdown"
             >
-              <NavDropdown.Item href="#action/3.1" className="text-dark-green">
-                Case1
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" className="text-dark-green">
-                Case2
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3" className="text-dark-green">
-                Case3
-              </NavDropdown.Item>
+              {cases.map((product) => (
+                <NavDropdown.Item as="div">
+                  <HeaderCard product={product} />
+                </NavDropdown.Item>
+              ))}
             </NavDropdown>
             <Nav.Link href="#link" className="text-dark-green link-style mx-3">
               Why KFCK
