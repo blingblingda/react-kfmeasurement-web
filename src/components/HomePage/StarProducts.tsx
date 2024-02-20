@@ -4,7 +4,7 @@ import StarCard from "../UI/Card/StarCard";
 const StarProducts = () => {
   return (
     <>
-      <Container className="mt-5 text-dark-green">
+<Container className="mt-3 text-dark-green">
         <Row>
           <Col>
             <h2 className="text-center mb-5">Star Product</h2>
