@@ -19,3 +19,15 @@
 .link-style:hover {
   text-decoration: underline;
 }
+
+/* .custom-nav-dropdown .dropdown-item:hover {
+  background-color: transparent;
+} */
+
+.custom-nav-dropdown .dropdown-item:active {
+  background-color: transparent;
+}
+
+.custom-nav-dropdown .dropdown-item {
+  cursor: pointer;
+}
