@@ -9,7 +9,7 @@ const HomePage = () => {
     <>
       <Header />
       <StarProducts />
-      <Feature title="5 reasons why professionals choose KFCK" />
+      <Feature />
       <Slider />
       <Footer />
     </>
