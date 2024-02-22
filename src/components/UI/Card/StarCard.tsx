@@ -13,7 +13,7 @@ const StarCard = ({ product }: StarCardProps) => {
       <Card.Img variant="top" src={product.imgSrc} />
       <Card.Body>
         <Card.Text>{product.description}</Card.Text>
-        <WebButton style="dark" onClick={() => console.log("clicked")}>
+        <WebButton btnStyle="dark" onClick={() => console.log("clicked")}>
           Learn More
         </WebButton>
       </Card.Body>

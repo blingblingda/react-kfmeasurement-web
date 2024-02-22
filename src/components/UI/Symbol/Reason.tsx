@@ -1,6 +1,5 @@
 import React from "react";
 import Symbol from "../../../models/symbol";
-// import { Icon } from "react-bootstrap-icons";
 
 interface ReasonProps {
   reason: Symbol;
