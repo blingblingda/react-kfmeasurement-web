@@ -1,8 +1,9 @@
 import Header from "../Layout/Header/Header";
 import StarProducts from "./StarProducts";
 import Feature from "./Feature";
-import Slider from "./Slider";
+import Banner from "./Banner";
 import Footer from "../Layout/Footer/Footer";
+import Slider from "../UI/Carousel/Slider";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Header />
       <StarProducts />
       <Feature />
+      <Banner />
       <Slider />
       <Footer />
     </>
