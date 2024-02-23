@@ -4,6 +4,7 @@ import Feature from "./Feature";
 import Slider from "./Slider";
 import Footer from "../Layout/Footer/Footer";
 import Hero from "./Hero";
+import WhyUs from "./WhyUs";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Hero />
       <StarProducts />
       <Feature />
+      <WhyUs />
       <Slider />
       <Footer />
     </>
