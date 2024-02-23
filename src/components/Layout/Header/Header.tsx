@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import WebButton from "../../UI/Button/WebButton";
 import HeaderCard from "../../UI/Card/HeaderCard";
-import "./Header.css";
 import Product from "../../../models/product";
+import "./Header.scss";
 import productSeriesImg1 from "../../../assets/productSeries1.png";
 import productSeriesImg2 from "../../../assets/productSeries2.png";
 import productSeriesImg3 from "../../../assets/productSeries3.png";
@@ -57,28 +57,24 @@ const cases: Product[] = [
   {
     id: 4,
     imgSrc: caseImg4,
-    description: "Yankuang Energy Group",
+    description: "Yan Energy Group",
   },
 ];
 
 const Header = (props: HeaderProps) => {
   return (
-    <Navbar
-      id="top"
-      expand="lg"
-      className="bg-body-transparent navbar-underline"
-    >
+    <Navbar id="top" expand="lg" className="bg-body-transparent">
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Brand href="#home" className="text-dark-green logo-style">
+          KFCK
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Navbar.Brand href="#home" className="text-dark-green logo-style">
-            KFCK
-          </Navbar.Brand>
           <Nav className="mx-auto">
             <NavDropdown
               title="Products"
               id="basic-nav-dropdown"
-              className="mx-3 nav-dropdown-title custom-nav-dropdown"
+              className="mx-5 nav-dropdown-title custom-nav-dropdown"
             >
               {products.map((product) => (
                 <NavDropdown.Item key={product.id}>
@@ -89,7 +85,7 @@ const Header = (props: HeaderProps) => {
             <NavDropdown
               title="Cases"
               id="basic-nav-dropdown"
-              className="mx-3 nav-dropdown-title custom-nav-dropdown"
+              className="mx-5 nav-dropdown-title custom-nav-dropdown"
             >
               {cases.map((product) => (
                 <NavDropdown.Item key={product.id}>
@@ -97,12 +93,12 @@ const Header = (props: HeaderProps) => {
                 </NavDropdown.Item>
               ))}
             </NavDropdown>
-            <Nav.Link href="#link" className="text-dark-green link-style mx-3">
+            <Nav.Link href="#link" className="text-dark-green link-style mx-5">
               Why KFCK
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <WebButton style="dark" onClick={() => console.log("clicked")}>
+        <WebButton btnStyle="dark" onClick={() => console.log("clicked")}>
           Contact Us
         </WebButton>
       </Container>

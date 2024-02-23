@@ -2,14 +2,17 @@ import Button from "react-bootstrap/Button";
 
 interface IButtonProps {
   children: string;
-  style: "dark" | "light";
+  btnStyle: "dark" | "light";
   onClick: () => void;
 }
 
-const WebButton = ({ children, style, onClick }: IButtonProps) => {
+const WebButton = ({ children, btnStyle, onClick }: IButtonProps) => {
   return (
     <>
-      <Button variant={style == "dark" ? "outline-dark-green" : "outline-white"} onClick={onClick}>
+      <Button
+        variant={btnStyle === "dark" ? "outline-dark-green" : "outline-white"}
+        onClick={onClick}
+      >
         {children}
       </Button>
     </>

@@ -1,18 +1,20 @@
-.navbar-underline {
-  border-bottom: 1px solid var(--dark-green);
-}
+@import "../../../css/theme-color.scss";
 
 .logo-style {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.toggle {
+  color: $dark-green;
+}
+
 .nav-dropdown-title .dropdown-toggle {
-  color: var(--dark-green);
+  color: $dark-green;
 }
 
 .nav-dropdown-title .dropdown-toggle:hover {
-  color: var(--dark-green);
+  color: $dark-green;
   text-decoration: underline;
 }
 
@@ -20,14 +22,10 @@
   text-decoration: underline;
 }
 
-/* .custom-nav-dropdown .dropdown-item:hover {
-  background-color: transparent;
-} */
+.custom-nav-dropdown .dropdown-item {
+  cursor: pointer;
+}
 
 .custom-nav-dropdown .dropdown-item:active {
   background-color: transparent;
-}
-
-.custom-nav-dropdown .dropdown-item {
-  cursor: pointer;
 }
