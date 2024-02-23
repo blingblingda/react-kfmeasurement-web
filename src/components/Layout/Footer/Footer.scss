@@ -1,11 +1,12 @@
+@import "../../../theme-color.scss";
 
 .footer-top {
-  background-color: var(--dark-green);
+  background-color: $dark-green;
 }
 .footer-bottom {
-  background-color: var(--light-green);
+  background-color: $dark-green;
 }
-.link-white{
+.link-white {
   text-decoration: none;
 }
 #scroll-top {

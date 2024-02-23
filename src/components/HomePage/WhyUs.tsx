@@ -5,7 +5,7 @@ import WebButton from "../UI/Button/WebButton";
 const WhyUs = () => {
   return (
     <>
-      <div className="bg-white py-5">
+      <div className="bg-light-grey py-5">
         <div
           className="mx-5 bg-body-tertiary rounded-2"
           style={{

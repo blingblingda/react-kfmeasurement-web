@@ -1,6 +1,5 @@
 import Card from "react-bootstrap/Card";
 import Product from "../../../models/product";
-import "./SliderCard.css";
 
 interface SliderCardProps {
   slide: Product;
@@ -8,13 +7,14 @@ interface SliderCardProps {
 
 const SliderCard = ({ slide }: SliderCardProps) => {
   return (
-    <Card border="light" text="dark-green">
+    <Card className="boarder border-white">
       <Card.Img src={slide.imgSrc} />
       <Card.Body>
         <a
-          className="link text-dark-green"
+          className="text-dark-green text-decoration-none"
           href="http://www.google.com"
           target="_blank"
+          rel="noreferrer"
         >
           <Card.Text>{slide.description}</Card.Text>
         </a>
