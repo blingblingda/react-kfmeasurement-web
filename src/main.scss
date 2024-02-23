@@ -12,3 +12,7 @@ $custom-colors: (
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.section{
+  margin: 20rem 0;
+}

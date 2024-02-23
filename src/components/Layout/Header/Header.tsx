@@ -63,7 +63,7 @@ const cases: Product[] = [
 
 const Header = (props: HeaderProps) => {
   return (
-    <Navbar id="top" expand="lg" className="bg-body-transparent">
+    <Navbar id="top" expand="lg" className="bg-body-transparent custom-navbar">
       <Container>
         <Navbar.Brand href="#home" className="text-dark-green logo-style">
           KFCK

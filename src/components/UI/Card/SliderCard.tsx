@@ -8,17 +8,17 @@ interface SliderCardProps {
 const SliderCard = ({ slide }: SliderCardProps) => {
   return (
     <Card className="boarder border-white">
-      <Card.Img src={slide.imgSrc} />
-      <Card.Body>
-        <a
-          className="text-dark-green text-decoration-none"
-          href="http://www.google.com"
-          target="_blank"
-          rel="noreferrer"
-        >
+      <a
+        className="text-dark-green text-decoration-none"
+        href="http://www.google.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Card.Img src={slide.imgSrc} />
+        <Card.Body>
           <Card.Text>{slide.description}</Card.Text>
-        </a>
-      </Card.Body>
+        </Card.Body>
+      </a>
     </Card>
   );
 };

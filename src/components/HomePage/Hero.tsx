@@ -5,12 +5,12 @@ import WebButton from "../UI/Button/WebButton";
 const Hero = () => {
   return (
     <div
-      className="px-4 py-5 text-center"
+      className="px-4 py-5 text-center section"
       style={{
         backgroundImage: `url(${HeroBgImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "700px",
+        height: "640px",
       }}
     >
       <h1 className="display-5 mt-5 fw-bold text-white">
