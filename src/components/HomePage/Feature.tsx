@@ -41,7 +41,8 @@ const Feature = () => {
     <>
       <Container
         fluid
-        className="text-center mt-5 pt-5 pb-5 text-dark-green text-bg-light-grey"
+        className="text-center text-dark-green text-bg-light-grey
+        grey-sec-space"
       >
         <Row className="justify-content-md-center mb-5">
           <Col>

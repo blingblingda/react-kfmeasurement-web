@@ -13,6 +13,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.section{
-  margin: 20rem 0;
+.light-sec-space {
+  margin: 70px auto;
+}
+
+.grey-sec-space {
+  border-top: 70px solid $light-grey;
+  border-bottom: 70px solid $light-grey;
 }

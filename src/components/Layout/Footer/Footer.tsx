@@ -7,7 +7,7 @@ import MyButton from "../../UI/Button/WebButton";
 
 const Footer = () => {
   return (
-    <footer className="footer mt-auto pt-5 text-white">
+    <footer className="footer text-white">
       <div className="footer-top pt-5">
         <Container>
           <Row>

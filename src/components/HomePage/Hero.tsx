@@ -5,7 +5,7 @@ import WebButton from "../UI/Button/WebButton";
 const Hero = () => {
   return (
     <div
-      className="px-4 py-5 text-center section"
+      className="px-4 py-5 text-center"
       style={{
         backgroundImage: `url(${HeroBgImg})`,
         backgroundSize: "cover",

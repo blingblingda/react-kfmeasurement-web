@@ -55,16 +55,20 @@ const slides = [
 ];
 
 function Slider() {
-  const groupSize=3;
-  const groupSlides =[];
-  for (let i = 0; i<slides.length; i=groupSize + i){
+  const groupSize = 3;
+  const groupSlides = [];
+  for (let i = 0; i < slides.length; i = groupSize + i) {
     groupSlides.push(slides.slice(i, i + groupSize));
   }
 
   return (
-    <div>
+    <div className="light-sec-space">
       <h3 className="text-dark-green text-center">Slider Title Here</h3>
-      <Carousel data-bs-theme="light" className="mt-5 mb-5 text-center" indicators={false}>
+      <Carousel
+        data-bs-theme="light"
+        className="text-center"
+        indicators={false}
+      >
         {groupSlides.map((group, index) => (
           <Carousel.Item key={index}>
             <Stack
@@ -74,7 +78,7 @@ function Slider() {
             >
               {group.map((slide) => (
                 <SliderCard key={slide.id} slide={slide} />
-              ))}              
+              ))}
             </Stack>
           </Carousel.Item>
         ))}

@@ -35,7 +35,7 @@ const products = [
 const StarProducts = () => {
   return (
     <>
-      <Container className="mt-3 text-dark-green">
+      <Container className="text-dark-green light-sec-space">
         <Row>
           <Col>
             <h2 className="text-center mb-5">Star Product</h2>
