@@ -4,7 +4,7 @@ import Footer from "../Layout/Footer/Footer";
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-const ProductsPage = () => {
+const ProductListPage = () => {
   const navigate = useNavigate();
 
   const handleHomeClick: () => void = () => {
@@ -42,10 +42,9 @@ const ProductsPage = () => {
           <div>Description</div>
         </Container>
       </main>
-
       <Footer />
     </>
   );
 };
 
-export default ProductsPage;
+export default ProductListPage;
