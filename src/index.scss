@@ -21,3 +21,18 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   border-top: 70px solid $light-grey;
   border-bottom: 70px solid $light-grey;
 }
+
+.li-before::before {
+  content: "/";
+  color: $light-green;
+  margin: 0 0.5rem;
+}
+
+.path-text {
+  color: $light-green;
+}
+
+.path-text:hover {
+  cursor: pointer;
+  color: $dark-green;
+}
