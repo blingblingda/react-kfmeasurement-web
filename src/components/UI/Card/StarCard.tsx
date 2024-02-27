@@ -8,7 +8,7 @@ interface StarCardProps {
 
 const StarCard = ({ product }: StarCardProps) => {
   return (
-    <Card border="light" text="dark-green">
+    <Card border="light" text="dark-green" style={{width: '18rem', height: '24rem', marginBottom: '2rem'}}>
       <Card.Title>{product.name}</Card.Title>
       <Card.Img variant="top" src={product.imgSrc} />
       <Card.Body>
