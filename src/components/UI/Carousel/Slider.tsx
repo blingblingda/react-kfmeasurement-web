@@ -1,56 +1,67 @@
 import Carousel from "react-bootstrap/Carousel";
 import SliderCard from "../Card/SliderCard";
-import Star_1 from "../../../assets/star_1.png";
-import Star_2 from "../../../assets/star_2.png";
-import Star_3 from "../../../assets/star_3.png";
-import Star_4 from "../../../assets/star_4.png";
+import P_01 from "../../../assets/ProductsCenter/p01.png";
+import P_02 from "../../../assets/ProductsCenter/p02.png";
+import P_03 from "../../../assets/ProductsCenter/p03.png";
+import P_04 from "../../../assets/ProductsCenter/p04.png";
+import P_05 from "../../../assets/ProductsCenter/p05.png";
+import P_06 from "../../../assets/ProductsCenter/p06.png";
+import P_07 from "../../../assets/ProductsCenter/p07.png";
+import P_08 from "../../../assets/ProductsCenter/p08.png";
+import P_09 from "../../../assets/ProductsCenter/p09.png";
+//图片引用至矿用仪器仪表系列第一页
+
 import { Stack } from "react-bootstrap";
 
 const slides = [
   {
     id: 1,
-    description: "This is product 1",
-    imgSrc: Star_1,
+    description:
+      "Laser X-ray Surface Density Online Measurement Integrated Machine",
+    imgSrc: P_01,
   },
   {
     id: 2,
-    description: "This is product 2",
-    imgSrc: Star_2,
+    description: "X/β-ray Surface Density Measurement Instrument Series",
+    imgSrc: P_02,
   },
   {
     id: 3,
-    description: "This is product 3",
-    imgSrc: Star_3,
+    description:
+      "XCH12000 Low-light Spot X-ray Surface Density Measurement Instrument",
+    imgSrc: P_03,
   },
   {
     id: 4,
-    description: "This is product 4",
-    imgSrc: Star_4,
+    description: "BCH25100 β-ray Surface Density Measurement Instrument",
+    imgSrc: P_04,
   },
   {
     id: 5,
-    description: "This is product 5",
-    imgSrc: Star_1,
+    description:
+      "XCH-5000 Ultra-soft X-ray Surface Density Measurement Instrument",
+    imgSrc: P_05,
   },
   {
     id: 6,
-    description: "This is product 6",
-    imgSrc: Star_2,
+    description: "XCH12000 X-ray Surface Density Measurement Instrument",
+    imgSrc: P_06,
   },
   {
     id: 7,
-    description: "This is product 7",
-    imgSrc: Star_2,
+    description:
+      "KJ841 Mining Coal Natural γ-Ray Ash Content Measurement System",
+    imgSrc: P_07,
   },
   {
     id: 8,
-    description: "This is product 8",
-    imgSrc: Star_2,
+    description: "VIS Intelligent Dry Sorting Machine",
+    imgSrc: P_08,
   },
   {
     id: 9,
-    description: "This is product 9",
-    imgSrc: Star_2,
+    description: "CSW127 Moisture Analyzer",
+    imgSrc: P_09,
   },
 ];
 
@@ -63,7 +74,7 @@ function Slider() {
 
   return (
     <div className="light-sec-space">
-      <h3 className="text-dark-green text-center">Slider Title Here</h3>
+      <h2 className="text-dark-green text-center">Products Center</h2>
       <Carousel
         data-bs-theme="light"
         className="text-center"

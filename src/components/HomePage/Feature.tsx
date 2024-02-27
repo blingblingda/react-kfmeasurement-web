@@ -12,27 +12,27 @@ const reasons = [
   {
     id: 1,
     icon: Award,
-    text: "This is first reason",
+    text: "Patent Product Quality",
   },
   {
     id: 2,
     icon: Database,
-    text: "This is second reason",
+    text: "Advanced Research Technologies",
   },
   {
     id: 3,
     icon: Key,
-    text: "This is third reason",
+    text: "Superb Brand Advantage",
   },
   {
     id: 4,
     icon: People,
-    text: "This is forth reason",
+    text: "Deep Industry Collaboration",
   },
   {
     id: 5,
     icon: ShieldCheck,
-    text: "This is fifth reason",
+    text: "Energy-efficient and High-performance",
   },
 ];
 

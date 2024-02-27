@@ -9,25 +9,25 @@ const products = [
   {
     id: 1,
     name: "Star Proudt 1",
-    description: "This is star product 1",
+    description: "Passive Ash Content Analyzer Series",
     imgSrc: Star_1,
   },
   {
     id: 2,
     name: "Star Proudt 2",
-    description: "This is star product 2",
+    description: "X/β-ray Surface Density Measurement Instrument Series",
     imgSrc: Star_2,
   },
   {
     id: 3,
     name: "Star Proudt 3",
-    description: "This is star product 3",
+    description: "Explosion-proof/General Electronic Belt Scale Series",
     imgSrc: Star_3,
   },
   {
     id: 4,
     name: "Star Proudt 4",
-    description: "This is star product 4",
+    description: "KJ357 Mining Power Monitoring System",
     imgSrc: Star_4,
   },
 ];
@@ -38,7 +38,7 @@ const StarProducts = () => {
       <Container className="text-dark-green light-sec-space">
         <Row>
           <Col>
-            <h2 className="text-center mb-5">Star Product</h2>
+            <h2 className="text-center mb-5">Star Products</h2>
           </Col>
         </Row>
         <Row>
