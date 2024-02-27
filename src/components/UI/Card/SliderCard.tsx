@@ -7,7 +7,7 @@ interface SliderCardProps {
 
 const SliderCard = ({ slide }: SliderCardProps) => {
   return (
-    <Card className="boarder border-white">
+    <Card className="boarder border-white" style={{width: '22rem'}}>
       <a
         className="text-dark-green text-decoration-none"
         href="http://www.google.com"

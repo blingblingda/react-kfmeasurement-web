@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Layout/Header/Header";
 import Footer from "../Layout/Footer/Footer";
+import ProductList from "./ProductList";
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
@@ -33,8 +34,8 @@ const ProductListPage = () => {
                 Filter
               </div>
             </Col>
-            <Col sm={9} className="bg-secondary">
-              Product list
+            <Col sm={9} >
+              <ProductList />
             </Col>
           </Row>
         </Container>
