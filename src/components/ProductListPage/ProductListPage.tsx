@@ -24,8 +24,8 @@ const ProductListPage = () => {
             <li className="li-before text-dark-green">Products</li>
           </ol>
         </Container>
-        <Container>
-          <Row className="justify-content-center" style={{ height: "2000px" }}>
+        <Container className="py-5">
+          <Row className="justify-content-center">
             <Col sm={3} className="bg-primary">
               <div
                 className="sticky-sm-top bg-danger mt-5"
@@ -34,13 +34,24 @@ const ProductListPage = () => {
                 Filter
               </div>
             </Col>
-            <Col sm={9} >
+            <Col sm={9}>
               <ProductList />
             </Col>
           </Row>
         </Container>
-        <Container>
-          <div>Description</div>
+        <Container className="py-5">
+          <small
+            className="d-inline-block w-50 text-grey "
+            style={{ lineHeight: "1.75" }}
+          >
+            Engineered for Australia's extreme summers & winters. Heat or cool
+            your whole home or a single room with our range of climate
+            solutions. Smart choice cooling. Leading warranties. Easy
+            installation. Leading health features. Made to last. Types: split
+            system air conditioning, multi air conditioning, ducted air
+            conditioning, cassette air conditioning, window air conditioning,
+            gas ducted heating, evaporative cooling
+          </small>
         </Container>
       </main>
       <Footer />
