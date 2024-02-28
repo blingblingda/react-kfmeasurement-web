@@ -36,3 +36,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   cursor: pointer;
   color: $dark-green;
 }
+
+.pointer:hover {
+  cursor: pointer;
+}

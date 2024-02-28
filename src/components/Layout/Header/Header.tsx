@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import WebButton from "../../UI/Button/WebButton";
 import HeaderCard from "../../UI/Card/HeaderCard";
@@ -8,6 +9,7 @@ import productSeriesImg1 from "../../../assets/productSeries1.png";
 import productSeriesImg2 from "../../../assets/productSeries2.png";
 import productSeriesImg3 from "../../../assets/productSeries3.png";
 import productSeriesImg4 from "../../../assets/productSeries4.png";
+import productSeriesImg5 from "../../../assets/productSeries5.jpg";
 import caseImg1 from "../../../assets/case1.png";
 import caseImg2 from "../../../assets/case2.png";
 import caseImg3 from "../../../assets/case3.png";
@@ -20,21 +22,31 @@ const products: Product[] = [
     id: 1,
     imgSrc: productSeriesImg1,
     description: "Surface density meter",
+    path: "/products",
   },
   {
     id: 2,
     imgSrc: productSeriesImg2,
     description: "Mining instrumentation",
+    path: "/products",
   },
   {
     id: 3,
     imgSrc: productSeriesImg3,
     description: "Power Supply System",
+    path: "/products",
   },
   {
     id: 4,
     imgSrc: productSeriesImg4,
     description: "Intelligent Products",
+    path: "/products",
+  },
+  {
+    id: 5,
+    imgSrc: productSeriesImg5,
+    description: "All Products",
+    path: "/products",
   },
 ];
 
@@ -62,10 +74,19 @@ const cases: Product[] = [
 ];
 
 const Header = (props: HeaderProps) => {
+  const navigate = useNavigate();
+
+  const handleHomeClick: () => void = () => {
+    navigate("/");
+  };
+
   return (
     <Navbar id="top" expand="lg" className="bg-body-transparent custom-navbar">
       <Container>
-        <Navbar.Brand href="#home" className="text-dark-green logo-style">
+        <Navbar.Brand
+          className="text-dark-green logo-style pointer"
+          onClick={handleHomeClick}
+        >
           KFCK
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
