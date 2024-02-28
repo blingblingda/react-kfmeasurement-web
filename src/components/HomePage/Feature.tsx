@@ -49,7 +49,7 @@ const Feature = () => {
             <h2>5 reasons why professionals choose KFCK</h2>
           </Col>
         </Row>
-        <Row className="justify-content-md-center">
+        <Row className="justify-content-md-center px-5">
           {reasons.map((reason) => (
             <Col key={reason.id}>
               <Reason reason={reason} />
