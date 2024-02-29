@@ -28,7 +28,7 @@ const ProductListPage = () => {
           <Row className="justify-content-center">
             <Col sm={3} className="bg-primary">
               <div
-                className="sticky-sm-top bg-danger mt-5"
+                className="sticky-top bg-danger"
                 style={{ height: "100px", top: "90px" }}
               >
                 Filter
