@@ -41,18 +41,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   cursor: pointer;
 }
 
-.border-top-line {
+.card-border-top-line {
   border-top: 2px solid $dark-green;
 }
 
 .card-min-height {
-  min-height: 400px;
-}
-
-.card-img-min-height {
-  min-height: 200px;
-}
-
-.card-title-max-height {
-  max-height: 50px;
+  min-height: 450px;
 }
