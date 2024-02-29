@@ -43,7 +43,7 @@ const StarProducts = () => {
         </Row>
         <Row>
           {products.map((product) => (
-            <Col key={product.id}>
+            <Col key={product.id} sm={6} md={3} lg={3}>
               <StarCard product={product} />
             </Col>
           ))}

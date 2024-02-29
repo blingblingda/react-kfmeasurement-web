@@ -8,10 +8,14 @@ interface StarCardProps {
 
 const StarCard = ({ product }: StarCardProps) => {
   return (
-    <Card border="light" text="dark-green" style={{width: '18rem', height: '24rem', marginBottom: '2rem'}}>
+    <Card
+      border="light"
+      text="dark-green"
+      className="d-flex flex-column justify-content-between align-items-center star-card-height"
+    >
       <Card.Title>{product.name}</Card.Title>
       <Card.Img variant="top" src={product.imgSrc} />
-      <Card.Body>
+      <Card.Body className="d-flex flex-column justify-content-between align-items-center text-center">
         <Card.Text>{product.description}</Card.Text>
         <WebButton btnStyle="dark" onClick={() => console.log("clicked")}>
           Learn More

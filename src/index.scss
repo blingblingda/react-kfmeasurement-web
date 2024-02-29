@@ -48,3 +48,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .card-min-height {
   min-height: 450px;
 }
+
+.star-card-height {
+  height: 400px;
+}
