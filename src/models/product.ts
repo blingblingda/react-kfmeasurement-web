@@ -4,4 +4,5 @@ export default interface Product {
   imgSrc: string;
   description: string;
   category?: string;
+  path?: string;
 }

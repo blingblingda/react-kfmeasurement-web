@@ -17,7 +17,7 @@ const Hero = () => {
         High-quality Mining Intelligent Products
       </h1>
       <div className="col-lg-6 mx-auto">
-        <p className="lead mb-4 text-white">
+        <p className="lead my-5 fw-bold text-white ">
           Quickly design and customize responsive mobile-first sites with
           Bootstrap, the world’s most popular front-end open source toolkit,
           featuring Sass variables and mixins, responsive grid system, extensive
