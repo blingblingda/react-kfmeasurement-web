@@ -19,9 +19,15 @@ const ProductList = () => {
   return (
     <Container>
       {rows.map((row, rowIndex) => (
-        <Row key={rowIndex} style={{ marginBottom: "20px" }}>
+        <Row key={rowIndex}>
           {row.map((product) => (
-            <Col key={product.id} sm={12} md={4} lg={4}>
+            <Col
+              key={product.id}
+              sm={12}
+              md={4}
+              lg={4}
+              style={{ marginBottom: "20px" }}
+            >
               <ProductCard product={product} />
             </Col>
           ))}
