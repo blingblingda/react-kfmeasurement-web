@@ -10,16 +10,12 @@ interface ProductCardProps {
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <Card className="border-top-line card-min-height">
-      <Card.Body className="d-flex flex-column justify-content-center align-items-center">
+      <Card.Body className="d-flex flex-column justify-content-between align-items-center">
         <div>
           <Card.Title>{product.name}</Card.Title>
           <Card.Text>{product.description}</Card.Text>
         </div>
-
-        <div>
-          <Card.Img variant="bottom" src={product.imgSrc} />
-        </div>
-
+        <Card.Img variant="bottom" src={product.imgSrc} />
         <WebButton btnStyle="dark" onClick={() => console.log("clicked")}>
           Learn More
         </WebButton>
