@@ -2,19 +2,24 @@ import ProductCard from "../UI/Card/ProductCard";
 import { Container, Row, Col } from "react-bootstrap";
 import Items from "../UI/ItemList/itemList";
 import Product from "../../models/product";
+import { arrayBuffer } from "node:stream/consumers";
 
-const products: Product[] = Items;
+// const products: Product[] = Items;
+
+interface ProductListProps {
+  filteredItems: Product[];
+}
 
 const chunkArray = (array: Product[], size: number) => {
   const chunkedArr = [];
-  for (let i = 0; i < products.length; i += size) {
-    chunkedArr.push(products.slice(i, i + size));
+  for (let i = 0; i < array.length; i += size) {
+    chunkedArr.push(array.slice(i, i + size));
   }
   return chunkedArr;
 };
 
-const ProductList = () => {
-  const rows: Product[][] = chunkArray(products, 3);
+const ProductList = ({filteredItems}: ProductListProps) => {
+  const rows: Product[][] = chunkArray(filteredItems, 3);
 
   return (
     <Container>
@@ -26,7 +31,7 @@ const ProductList = () => {
               sm={12}
               md={4}
               lg={4}
-              style={{ marginBottom: "20px" }}
+              className="my-3"
             >
               <ProductCard product={product} />
             </Col>

@@ -18,12 +18,14 @@ const Items = [
     description:
       "Laser X-ray Surface Density Online Measurement Integrated Machine",
     imgSrc: P_01,
+    category: "series_1",
   },
   {
     id: 2,
     name: "Product Name",
     description: "X/β-ray Surface Density Measurement Instrument Series",
     imgSrc: P_02,
+    category: "series_1",
   },
   {
     id: 3,
@@ -31,12 +33,14 @@ const Items = [
     description:
       "XCH12000 Low-light Spot X-ray Surface Density Measurement Instrument",
     imgSrc: P_03,
+    category: "series_1",
   },
   {
     id: 4,
     name: "Product Name",
     description: "Mining Electronic Belt Scale Series",
     imgSrc: P_04,
+    category: "series_2",
   },
   {
     id: 5,
@@ -44,12 +48,14 @@ const Items = [
     description:
       "XCH-5000 Ultra-soft X-ray Surface Density Measurement Instrument",
     imgSrc: P_05,
+    category: "series_2",
   },
   {
     id: 6,
     name: "Product Name",
     description: "Intelligent Dynamic Measurement",
     imgSrc: P_06,
+    category: "series_2",
   },
   {
     id: 7,
@@ -57,36 +63,42 @@ const Items = [
     description:
       "KJ841 Mining Coal Natural γ-Ray Ash Content Measurement System",
     imgSrc: P_07,
+    category: "series_3",
   },
   {
     id: 8,
     name: "Product Name",
     description: "VIS Intelligent Dry Sorting Machine",
     imgSrc: P_08,
+    category: "series_3",
   },
   {
     id: 9,
     name: "Product Name",
     description: "CSW127 Moisture Analyzer",
     imgSrc: P_09,
+    category: "series_3",
   },
   {
     id: 10,
     name: "Product Name",
     description: "X-ray Online Ash Analyzer",
     imgSrc: P_10,
+    category: "series_4",
   },
   {
     id: 11,
     name: "Product Name",
     description: "CHS1500 Mining Nuclear Scale Series",
     imgSrc: P_11,
+    category: "series_4",
   },
   {
     id: 12,
     name: "Product Name",
     description: "KEMS-2010 Energy Management System",
     imgSrc: P_12,
+    category: "series_4",
   },
 ];
 
