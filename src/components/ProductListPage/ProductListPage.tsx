@@ -8,19 +8,23 @@ import ProductFilter from "./ProductFilter";
 import Items from "../UI/ItemList/itemList";
 import Product from "../../models/product";
 
-
 const ProductListPage = () => {
   const products: Product[] = Items;
 
   const [filteredItems, setFilteredItems] = useState(products);
   const navigate = useNavigate();
 
-  const handleCheckboxChange = (event: any) => {
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.id === "clear_select") {
+      setFilteredItems(products);
+      return;
+    }
+
     if (event.target.checked) {
       setFilteredItems(
         products.filter((product) => product.category === event.target.id)
       );
-     console.log(event);
+      console.log(event.target.id);
     } else {
       setFilteredItems(products);
     }
@@ -48,7 +52,7 @@ const ProductListPage = () => {
               <ProductFilter catSelect={handleCheckboxChange} />
             </Col>
             <Col sm={12} md={12} lg={9}>
-              <ProductList filteredItems={filteredItems}/>
+              <ProductList filteredItems={filteredItems} />
             </Col>
           </Row>
         </Container>
