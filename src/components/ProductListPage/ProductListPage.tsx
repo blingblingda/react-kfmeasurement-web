@@ -1,12 +1,30 @@
-import React from "react";
+import { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import Header from "../Layout/Header/Header";
 import Footer from "../Layout/Footer/Footer";
 import ProductList from "./ProductList";
-import { Container, Row, Col } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import ProductFilter from "./ProductFilter";
+import Items from "../UI/ItemList/itemList";
+import Product from "../../models/product";
+
 
 const ProductListPage = () => {
+  const products: Product[] = Items;
+
+  const [filteredItems, setFilteredItems] = useState(products);
   const navigate = useNavigate();
+
+  const handleCheckboxChange = (event: any) => {
+    if (event.target.checked) {
+      setFilteredItems(
+        products.filter((product) => product.category === event.target.id)
+      );
+     console.log(event);
+    } else {
+      setFilteredItems(products);
+    }
+  };
 
   const handleHomeClick: () => void = () => {
     navigate("/");
@@ -17,25 +35,20 @@ const ProductListPage = () => {
       <Header />
       <main className="bg-light-grey">
         <Container className="px-0">
-          <ol className="py-4 list-unstyled d-flex justify-content-start">
+          <Col className="py-4 list-unstyled d-flex justify-content-start">
             <li className="path-text" onClick={handleHomeClick}>
               Home
             </li>
             <li className="li-before text-dark-green">Products</li>
-          </ol>
+          </Col>
         </Container>
-        <Container className="py-5">
+        <Container className="py-4">
           <Row className="justify-content-center">
-            <Col sm={3} className="bg-primary">
-              <div
-                className="sticky-top bg-danger"
-                style={{ height: "100px", top: "90px" }}
-              >
-                Filter
-              </div>
+            <Col sm={12} md={12} lg={3} className="bg-primary">
+              <ProductFilter catSelect={handleCheckboxChange} />
             </Col>
-            <Col sm={9}>
-              <ProductList />
+            <Col sm={12} md={12} lg={9}>
+              <ProductList filteredItems={filteredItems}/>
             </Col>
           </Row>
         </Container>
