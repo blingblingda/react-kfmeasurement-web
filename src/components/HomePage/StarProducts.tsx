@@ -11,24 +11,28 @@ const products = [
     name: "Star Proudt 1",
     description: "Passive Ash Content Analyzer Series",
     imgSrc: Star_1,
+    category: "series_1"
   },
   {
     id: 2,
     name: "Star Proudt 2",
     description: "X/β-ray Surface Density Measurement Instrument Series",
     imgSrc: Star_2,
+    category: "series_2"
   },
   {
     id: 3,
     name: "Star Proudt 3",
     description: "Explosion-proof/General Electronic Belt Scale Series",
     imgSrc: Star_3,
+    category: "series_3"
   },
   {
     id: 4,
     name: "Star Proudt 4",
     description: "KJ357 Mining Power Monitoring System",
     imgSrc: Star_4,
+    category: "series_4"
   },
 ];
 
