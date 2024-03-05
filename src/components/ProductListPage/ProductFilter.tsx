@@ -13,11 +13,11 @@ const ProductFilter = ({ catSelect }: ProductFilterProps) => {
       >
         <h5>Find Your Products</h5>
         <Form>
-          {["series_1", "series_2", "series_3", "series_4", "clear_select"].map(
+          {["series_1", "series_2", "series_3", "series_4"].map(
             (category) => (
               <div key={`${category}`} className="mb-3">
                 <Form.Check
-                  type="radio"
+                  type="checkbox"
                   name="category"
                   id={`${category}`}
                   label={`${category}`}

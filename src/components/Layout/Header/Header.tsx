@@ -22,30 +22,35 @@ const products: Product[] = [
     id: 1,
     imgSrc: productSeriesImg1,
     description: "Surface density meter",
+    category: "series_1",
     path: "/products",
   },
   {
     id: 2,
     imgSrc: productSeriesImg2,
     description: "Mining instrumentation",
+    category: "series_2",
     path: "/products",
   },
   {
     id: 3,
     imgSrc: productSeriesImg3,
     description: "Power Supply System",
+    category: "series_3",
     path: "/products",
   },
   {
     id: 4,
     imgSrc: productSeriesImg4,
     description: "Intelligent Products",
+    category: "series_4",
     path: "/products",
   },
   {
     id: 5,
     imgSrc: productSeriesImg5,
     description: "All Products",
+    category: "",
     path: "/products",
   },
 ];
@@ -55,21 +60,25 @@ const cases: Product[] = [
     id: 1,
     imgSrc: caseImg1,
     description: "GuangWang pty ltd",
+    category: "case_1",
   },
   {
     id: 2,
     imgSrc: caseImg2,
     description: "Jizhong Energy",
+    category: "case_2"
   },
   {
     id: 3,
     imgSrc: caseImg3,
     description: "Huaibei Mining",
+    category: "case_3"
   },
   {
     id: 4,
     imgSrc: caseImg4,
     description: "Yan Energy Group",
+    category: "case_4"
   },
 ];
 

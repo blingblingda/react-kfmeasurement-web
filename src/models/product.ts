@@ -3,6 +3,6 @@ export default interface Product {
   name?: string;
   imgSrc: string;
   description: string;
-  category?: string;
+  category: string;
   path?: string;
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Header from "../Layout/Header/Header";
@@ -12,23 +12,29 @@ const ProductListPage = () => {
   const products: Product[] = Items;
 
   const [filteredItems, setFilteredItems] = useState(products);
+  const [queryKeywords, setQueryKeywords] = useState([] as string[]);
   const navigate = useNavigate();
 
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.id === "clear_select") {
-      setFilteredItems(products);
-      return;
-    }
+    const isChecked = event.target.checked;
+    const category = event.target.id;
 
-    if (event.target.checked) {
-      setFilteredItems(
-        products.filter((product) => product.category === event.target.id)
-      );
-      console.log(event.target.id);
+    if (isChecked) {
+      setQueryKeywords([...queryKeywords, category]);
     } else {
-      setFilteredItems(products);
+      setQueryKeywords(queryKeywords.filter((keyword) => keyword !== category));
     }
   };
+
+  useEffect(() => {
+    if (queryKeywords.length === 0) {
+      setFilteredItems(products);
+    } else {
+      setFilteredItems(
+        products.filter((product) => queryKeywords.includes(product.category))
+      );
+    }
+  }, [products, queryKeywords]);
 
   const handleHomeClick: () => void = () => {
     navigate("/");
