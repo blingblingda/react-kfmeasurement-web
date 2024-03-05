@@ -19,6 +19,7 @@ const Items = [
       "Laser X-ray Surface Density Online Measurement Integrated Machine",
     imgSrc: P_01,
     category: "series_1",
+    slug: "first-product",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const Items = [
     description: "X/β-ray Surface Density Measurement Instrument Series",
     imgSrc: P_02,
     category: "series_1",
+    slug: "second-product",
   },
   {
     id: 3,
