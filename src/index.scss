@@ -8,6 +8,7 @@ $custom-colors: (
   "light-grey": $light-grey,
   "white": $white,
   "grey": $grey,
+  "snow-white": $snow-white,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

@@ -54,7 +54,7 @@ const ProductListPage = () => {
         </Container>
         <Container className="py-4">
           <Row className="justify-content-center">
-            <Col sm={12} md={12} lg={3} className="bg-primary">
+            <Col sm={12} md={12} lg={3} className="bg-light-grey">
               <ProductFilter catSelect={handleCheckboxChange} />
             </Col>
             <Col sm={12} md={12} lg={9}>
