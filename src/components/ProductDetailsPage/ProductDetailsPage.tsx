@@ -1,13 +1,14 @@
-import { Col, Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Footer from "../Layout/Footer/Footer";
 import Header from "../Layout/Header/Header";
 import Items from "../UI/ItemList/itemList";
+import Feature from "../HomePage/Feature";
 
 const ProductDetailsPage = () => {
   let { productSlug } = useParams();
-  const product = Items.filter((item) => item.slug === productSlug);
+  const product = Items.filter((item) => item.slug === productSlug)[0];
   const navigate = useNavigate();
 
   const handleHomeClick: () => void = () => {
@@ -33,12 +34,42 @@ const ProductDetailsPage = () => {
               >
                 Products
               </li>
-              <li className="li-before text-dark-green">{product[0].name}</li>
+              <li className="li-before text-dark-green">{product.name}</li>
             </Col>
           </Container>
-          <Container>
-            <h4>Display this product</h4>
-            <div>{product[0].description}</div>
+          <Container className="py-4">
+            <Row>
+              <Col xs={12} md={6} lg={6} className="pr-5">
+                <img
+                  src={product.imgSrc}
+                  alt="first product"
+                  className="d-block w-100"
+                />
+              </Col>
+              <Col className="text-dark-green px-5" md={6} lg={6}>
+                <h1>{product.name}</h1>
+                <div>
+                  {product.description}
+                  <ul>
+                    <li>
+                      <p>Specifications about the product</p>
+                    </li>
+                    <li>
+                      <p>Specifications about the product</p>
+                    </li>
+                    <li>
+                      <p>Specifications about the product</p>
+                    </li>
+                    <li>
+                      <p>Specifications about the product</p>
+                    </li>
+                  </ul>
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Feature />
+            </Row>
           </Container>
           <Container className="py-5">
             <small
