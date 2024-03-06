@@ -1,0 +1,16 @@
+@import "../../theme-color.scss";
+
+.nav-link.active {
+  color: $dark-green !important;
+  background-color: $light-grey !important;
+  border: none;
+}
+
+.nav-link {
+  color: $grey !important;
+  background-color: $white !important;
+}
+
+.tab-background {
+  background-color: $light-grey;
+}

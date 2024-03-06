@@ -1,10 +1,11 @@
-import { Col, Container, Row, Card } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { Col, Container, Row, Card, Tab, Tabs } from "react-bootstrap";
 import Footer from "../Layout/Footer/Footer";
 import Header from "../Layout/Header/Header";
 import Items from "../UI/ItemList/itemList";
 import WebButton from "../UI/Button/WebButton";
+import "./ProductDetailsPage.scss";
 
 const ProductDetailsPage = () => {
   let { productSlug } = useParams();
@@ -135,6 +136,28 @@ const ProductDetailsPage = () => {
                 Contact Us
               </WebButton>
             </div>
+          </Container>
+        </div>
+        <div>
+          <Container>
+            <Tabs
+              defaultActiveKey="search"
+              id="fill-tab-example"
+              className="mb-3 tab-background"
+              fill
+            >
+              <Tab
+                eventKey="search"
+                title="Search"
+                style={{ paddingTop: "5vh" }}
+              >
+                Search
+              </Tab>
+
+              <Tab eventKey="cart" title="Cart" style={{ paddingTop: "5vh" }}>
+                Cart
+              </Tab>
+            </Tabs>
           </Container>
         </div>
       </main>
