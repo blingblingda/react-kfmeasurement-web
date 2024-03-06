@@ -45,7 +45,7 @@ const ProductListPage = () => {
       <Header />
       <main className="bg-light-grey">
         <Container className="px-0">
-          <Col className="py-4 list-unstyled d-flex justify-content-start">
+          <Col className="py-4 px-4 list-unstyled d-flex justify-content-start">
             <li className="path-text" onClick={handleHomeClick}>
               Home
             </li>
