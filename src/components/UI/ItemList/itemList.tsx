@@ -22,6 +22,8 @@ const Items = [
       "This product is used for detecting the coating density and thickness of battery cells",
     imgSrc: P_01,
     category: "New Energy Surface Density Measuring Instrument",
+    slug: "first-product",
+
   },
   {
     id: 2,
@@ -30,6 +32,8 @@ const Items = [
       "For non-contact online detection of the areal density (mass per unit area) of lithium battery cathodes during coating",
     imgSrc: P_02,
     category: "New Energy Surface Density Measuring Instrument",
+    slug: "second-product",
+
   },
   {
     id: 3,
