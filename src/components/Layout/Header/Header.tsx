@@ -66,19 +66,19 @@ const cases: Product[] = [
     id: 2,
     imgSrc: caseImg2,
     description: "Jizhong Energy",
-    category: "case_2"
+    category: "case_2",
   },
   {
     id: 3,
     imgSrc: caseImg3,
     description: "Huaibei Mining",
-    category: "case_3"
+    category: "case_3",
   },
   {
     id: 4,
     imgSrc: caseImg4,
     description: "Yan Energy Group",
-    category: "case_4"
+    category: "case_4",
   },
 ];
 
