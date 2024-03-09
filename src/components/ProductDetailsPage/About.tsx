@@ -1,7 +1,7 @@
 import React from "react";
 
-const About = () => {
-  return <div>About</div>;
+const ComponentAbout = () => {
+  return <div className="py-3">Component About</div>;
 };
 
-export default About;
+export default ComponentAbout;

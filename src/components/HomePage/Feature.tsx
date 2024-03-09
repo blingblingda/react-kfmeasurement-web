@@ -5,10 +5,10 @@ import {
   People,
   ShieldCheck,
 } from "react-bootstrap-icons";
-import Reason from "../UI/Symbol/Reason";
 import { Col, Container, Row } from "react-bootstrap";
+import Feature from "../UI/Symbol/Feature";
 
-const reasons = [
+const features = [
   {
     id: 1,
     icon: Award,
@@ -36,7 +36,7 @@ const reasons = [
   },
 ];
 
-const Feature = () => {
+const BrandFeature = () => {
   return (
     <>
       <Container
@@ -50,9 +50,9 @@ const Feature = () => {
           </Col>
         </Row>
         <Row className="justify-content-md-center px-5">
-          {reasons.map((reason) => (
-            <Col key={reason.id}>
-              <Reason reason={reason} />
+          {features.map((feature) => (
+            <Col key={feature.id}>
+              <Feature feature={feature} />
             </Col>
           ))}
         </Row>
@@ -61,4 +61,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default BrandFeature;

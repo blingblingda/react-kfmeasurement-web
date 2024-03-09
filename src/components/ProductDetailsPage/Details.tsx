@@ -1,7 +1,7 @@
 import React from "react";
 
-const Details = () => {
-  return <div>Details</div>;
+const ComponentDetails = () => {
+  return <div className="text-danger py-3">Component Details</div>;
 };
 
-export default Details;
+export default ComponentDetails;
