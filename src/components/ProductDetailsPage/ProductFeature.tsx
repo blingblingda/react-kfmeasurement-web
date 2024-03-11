@@ -12,7 +12,7 @@ const features = [
   {
     id: 2,
     icon: BagHeart,
-    text: "Superb Brand Advantage",
+    text: "Super Brand Advantage",
   },
 
   {
@@ -25,16 +25,13 @@ const features = [
 const ProductFeature = () => {
   return (
     <>
-      <Container
-        fluid
-        className="text-center text-dark-green bg-gray py-5"
-      >
-        <Row className="justify-content-md-center mb-4">
+      <Container fluid className="text-center text-dark-green bg-gray py-5">
+        <Row className="justify-content-center mb-4">
           <Col>
-            <h5>Why choose KFCK prodcut</h5>
+            <h5>Why choose KFCK product</h5>
           </Col>
         </Row>
-        <Row className="justify-content-md-center px-5">
+        <Row className="justify-content-center px-5">
           {features.map((feature) => (
             <Col key={feature.id}>
               <Reason feature={feature} />

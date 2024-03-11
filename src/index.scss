@@ -56,12 +56,14 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 .tab-nav {
   color: $grey;
-  &:hover{
+  border-bottom: 1px solid $light-blue-grey;
+  &:hover {
     cursor: pointer;
     border-bottom: 1px solid $dark-green;
   }
-  &.active{
+  &.active {
     background: $light-grey;
     color: $dark-green;
+    border-bottom-color: transparent;
   }
 }

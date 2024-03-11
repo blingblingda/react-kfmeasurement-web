@@ -66,7 +66,7 @@ const ProductDetailsPage = () => {
             </Col>
           </Row>
         </Container>
-        <Container fluid className="py-2 px-5  bg-white text-dark-green ">
+        <Container fluid className="py-2 px-5 bg-white text-dark-green ">
           <Row className="d-flex justify-content-between align-items-center">
             <Col sm={6} md={6} lg={3} className="fw-bold">
               We can help you install your system.
