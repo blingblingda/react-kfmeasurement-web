@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 interface IButtonProps {
   children: string;
   btnStyle: "dark" | "light";
-  onClick: () => void;
+  onClick: (e?: any) => void;
 }
 
 const WebButton = ({ children, btnStyle, onClick }: IButtonProps) => {

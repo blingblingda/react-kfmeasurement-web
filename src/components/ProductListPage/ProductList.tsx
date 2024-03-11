@@ -1,10 +1,6 @@
 import ProductCard from "../UI/Card/ProductCard";
 import { Container, Row, Col } from "react-bootstrap";
-import Items from "../UI/ItemList/itemList";
 import Product from "../../models/product";
-import { arrayBuffer } from "node:stream/consumers";
-
-// const products: Product[] = Items;
 
 interface ProductListProps {
   filteredItems: Product[];
@@ -18,7 +14,7 @@ const chunkArray = (array: Product[], size: number) => {
   return chunkedArr;
 };
 
-const ProductList = ({filteredItems}: ProductListProps) => {
+const ProductList = ({ filteredItems }: ProductListProps) => {
   const rows: Product[][] = chunkArray(filteredItems, 3);
 
   return (
@@ -26,13 +22,7 @@ const ProductList = ({filteredItems}: ProductListProps) => {
       {rows.map((row, rowIndex) => (
         <Row key={rowIndex}>
           {row.map((product) => (
-            <Col
-              key={product.id}
-              sm={12}
-              md={4}
-              lg={4}
-              className="my-3"
-            >
+            <Col key={product.id} sm={12} md={4} lg={4} className="my-3">
               <ProductCard product={product} />
             </Col>
           ))}

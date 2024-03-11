@@ -6,11 +6,19 @@ import Items from "../UI/ItemList/itemList";
 import WebButton from "../UI/Button/WebButton";
 import ProductFeature from "./ProductFeature";
 import ProductTab from "./ProductTab";
+import Product from "../../models/product";
+
+type productIdParams = {
+  productId: string;
+};
 
 const ProductDetailsPage = () => {
-  let { productSlug } = useParams();
-  const product = Items.filter((item) => item.slug === productSlug)[0];
   const navigate = useNavigate();
+  const { productId } = useParams<productIdParams>();
+
+  const product: Product = Items.filter(
+    (item) => item.id.toString() === productId
+  )[0];
 
   const handleHomeClick: () => void = () => {
     navigate("/");
@@ -19,7 +27,7 @@ const ProductDetailsPage = () => {
     navigate("/products");
   };
   const handleContactClick: () => void = () => {
-    navigate("/products");
+    navigate("/");
   };
 
   return (
