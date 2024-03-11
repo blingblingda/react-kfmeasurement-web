@@ -28,7 +28,7 @@ const ProductTab = () => {
       </Container>
       <Container
         fluid
-        style={{ height: "500px" }}
+        style={{ height: "1400px" }}
         className="bg-light-grey px-5"
       >
         {currentContent === Content.ABOUT ? (
