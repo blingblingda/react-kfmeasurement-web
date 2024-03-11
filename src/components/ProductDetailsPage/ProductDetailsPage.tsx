@@ -157,7 +157,7 @@ const ProductDetailsPage = () => {
           </Row>
         </Container>
         <ProductFeature />
-        <ProductTab />
+        <ProductTab productMD={product.detailsMD || "/error.md"} />
       </main>
       <Container className="py-5">
         <small

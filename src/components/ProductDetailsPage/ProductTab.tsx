@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import ComponentAbout from "./About";
-import ComponentDetails from "./Details";
+import About from "./About";
+import Details from "./Details";
 
 const enum Content {
   ABOUT = "About",
   DETAILS = "Details",
 }
 
-const ProductTab = () => {
+interface ProductTabProps {
+  productMD: string;
+}
+
+const ProductTab = ({ productMD }: ProductTabProps) => {
   const [currentContent, setCurrentContent] = useState(Content.ABOUT);
   const handleContentSwitch = (contentType: Content) => {
     setCurrentContent(contentType);
@@ -52,9 +56,9 @@ const ProductTab = () => {
         className="bg-light-grey px-5"
       >
         {currentContent === Content.ABOUT ? (
-          <ComponentAbout />
+          <About productMD={productMD} />
         ) : (
-          <ComponentDetails />
+          <Details productMD={productMD} />
         )}
       </Container>
     </>

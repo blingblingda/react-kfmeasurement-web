@@ -1,7 +1,26 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 
-const ComponentDetails = () => {
-  return <div className="text-danger py-3">Component Details</div>;
+interface DetailsProps {
+  productMD: string;
+}
+
+const Details = ({ productMD }: DetailsProps) => {
+  const [content, setContent] = useState("");
+
+  useEffect(() => {
+    fetch(productMD)
+      .then((res) => res.text())
+      .then((text) => {
+        setContent(text);
+      });
+  }, []);
+
+  return (
+    <div className="text-danger py-3">
+      <ReactMarkdown children={content} />
+    </div>
+  );
 };
 
-export default ComponentDetails;
+export default Details;

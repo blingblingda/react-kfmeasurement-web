@@ -5,4 +5,5 @@ export default interface Product {
   description: string;
   category: string;
   path?: string;
+  detailsMD?: string;
 }
