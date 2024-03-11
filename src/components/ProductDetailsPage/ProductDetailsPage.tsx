@@ -157,20 +157,21 @@ const ProductDetailsPage = () => {
           </Row>
         </Container>
         <ProductFeature />
-        <ProductTab />
+        <ProductTab productMD={product.detailsMD || "/error.md"} />
       </main>
       <Container className="py-5">
         <small
           className="d-inline-block w-50 text-grey "
           style={{ lineHeight: "1.75" }}
         >
-          Engineered for Australia's extreme summers & winters. Heat or cool
-          your whole home or a single room with our range of climate solutions.
-          Smart choice cooling. Leading warranties. Easy installation. Leading
-          health features. Made to last. Types: split system air conditioning,
-          multi air conditioning, ducted air conditioning, cassette air
-          conditioning, window air conditioning, gas ducted heating, evaporative
-          cooling
+          Innovation: Leading industry trends through continuous innovation in
+          products and services. <br />
+          Quality: Persistently providing customers with high-quality products
+          and services. <br />
+          Integrity: Being honest and upright, keeping promises.
+          <br />
+          Win-Win: Achieving mutual success among customers, employees,
+          partners, and the company is our ultimate goal!
         </small>
       </Container>
       <Footer />
