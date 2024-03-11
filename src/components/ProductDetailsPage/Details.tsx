@@ -17,7 +17,7 @@ const Details = ({ productMD }: DetailsProps) => {
   }, []);
 
   return (
-    <div className="text-danger py-3">
+    <div className="text-dark-green py-5" style={{ margin: "0 8rem" }}>
       <ReactMarkdown children={content} />
     </div>
   );

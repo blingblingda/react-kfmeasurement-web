@@ -20,8 +20,11 @@ const ProductTab = ({ productMD }: ProductTabProps) => {
 
   return (
     <>
-      <Container fluid className="bg-gray pt-4 px-5">
-        <Row className="d-flex justify-content-center text-center">
+      <Container fluid className="bg-gray pt-4">
+        <Row
+          className="d-flex justify-content-center text-center"
+          style={{ margin: "0 8rem" }}
+        >
           <Col
             sm={6}
             md={6}
@@ -50,11 +53,7 @@ const ProductTab = ({ productMD }: ProductTabProps) => {
           </Col>
         </Row>
       </Container>
-      <Container
-        fluid
-        style={{ height: "500px" }}
-        className="bg-light-grey px-5"
-      >
+      <Container fluid className="bg-light-grey px-5">
         {currentContent === Content.ABOUT ? (
           <About productMD={productMD} />
         ) : (
