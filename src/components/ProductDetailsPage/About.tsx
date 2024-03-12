@@ -2,7 +2,7 @@ import { Col, Container, Row, Stack } from "react-bootstrap";
 import About_1_pic1 from "../../assets/About_1_pic1.jpeg";
 import About_1_pic2 from "../../assets/About_1_pic2.jpeg";
 
-const ComponentAbout = () => {
+const About = () => {
   return (
     <>
       <Stack direction="vertical" gap={1}>
@@ -67,4 +67,4 @@ const ComponentAbout = () => {
     </>
   );
 };
-export default ComponentAbout;
+export default About;

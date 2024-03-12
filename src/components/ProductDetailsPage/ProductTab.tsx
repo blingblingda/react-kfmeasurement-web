@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import ComponentAbout from "./About";
-import ComponentDetails from "./Details";
+import About from "./About";
+import Details from "./Details";
 
 const enum Content {
   ABOUT = "About",
   DETAILS = "Details",
 }
 
-const ProductTab = () => {
+interface ProductTabProps {
+  productMD: string;
+}
+
+const ProductTab = ({ productMD }: ProductTabProps) => {
   const [currentContent, setCurrentContent] = useState(Content.ABOUT);
   const handleContentSwitch = (contentType: Content) => {
     setCurrentContent(contentType);
@@ -16,13 +20,36 @@ const ProductTab = () => {
 
   return (
     <>
-      <Container fluid className="bg-gray pt-4 px-5">
-        <Row className="d-flex justify-content-center text-center">
-          <Col sm={6} md={6} lg={6} className={currentContent == Content.ABOUT ? "active tab-nav d-block py-2" : "tab-nav d-block py-2"} onClick={() => handleContentSwitch(Content.ABOUT)}>
-           About
+      <Container fluid className="bg-gray pt-4">
+        <Row
+          className="d-flex justify-content-center text-center"
+          style={{ margin: "0 8rem" }}
+        >
+          <Col
+            sm={6}
+            md={6}
+            lg={6}
+            className={
+              currentContent === Content.ABOUT
+                ? "active tab-nav d-block py-2"
+                : "tab-nav d-block py-2"
+            }
+            onClick={() => handleContentSwitch(Content.ABOUT)}
+          >
+            About
           </Col>
-          <Col sm={6} md={6} lg={6} className={currentContent == Content.DETAILS ? "active tab-nav d-block py-2" : "tab-nav d-block py-2"} onClick={() => handleContentSwitch(Content.DETAILS)}>
-           Detail
+          <Col
+            sm={6}
+            md={6}
+            lg={6}
+            className={
+              currentContent === Content.DETAILS
+                ? "active tab-nav d-block py-2"
+                : "tab-nav d-block py-2"
+            }
+            onClick={() => handleContentSwitch(Content.DETAILS)}
+          >
+            Detail
           </Col>
         </Row>
       </Container>
@@ -32,9 +59,9 @@ const ProductTab = () => {
         className="bg-light-grey px-5"
       >
         {currentContent === Content.ABOUT ? (
-          <ComponentAbout />
+          <About productMD={productMD} />
         ) : (
-          <ComponentDetails />
+          <Details productMD={productMD} />
         )}
       </Container>
     </>

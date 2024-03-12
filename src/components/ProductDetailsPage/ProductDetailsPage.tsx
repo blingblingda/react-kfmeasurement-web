@@ -6,11 +6,19 @@ import Items from "../UI/ItemList/itemList";
 import WebButton from "../UI/Button/WebButton";
 import ProductFeature from "./ProductFeature";
 import ProductTab from "./ProductTab";
+import Product from "../../models/product";
+
+type productIdParams = {
+  productId: string;
+};
 
 const ProductDetailsPage = () => {
-  let { productSlug } = useParams();
-  const product = Items.filter((item) => item.slug === productSlug)[0];
   const navigate = useNavigate();
+  const { productId } = useParams<productIdParams>();
+
+  const product: Product = Items.filter(
+    (item) => item.id.toString() === productId
+  )[0];
 
   const handleHomeClick: () => void = () => {
     navigate("/");
@@ -19,7 +27,7 @@ const ProductDetailsPage = () => {
     navigate("/products");
   };
   const handleContactClick: () => void = () => {
-    navigate("/products");
+    navigate("/");
   };
 
   return (
@@ -66,7 +74,7 @@ const ProductDetailsPage = () => {
             </Col>
           </Row>
         </Container>
-        <Container fluid className="py-2 px-5  bg-white text-dark-green ">
+        <Container fluid className="py-2 px-5 bg-white text-dark-green ">
           <Row className="d-flex justify-content-between align-items-center">
             <Col sm={6} md={6} lg={3} className="fw-bold">
               We can help you install your system.
@@ -149,20 +157,21 @@ const ProductDetailsPage = () => {
           </Row>
         </Container>
         <ProductFeature />
-        <ProductTab />
+        <ProductTab productMD={product.detailsMD || "/error.md"} />
       </main>
       <Container className="py-5">
         <small
           className="d-inline-block w-50 text-grey "
           style={{ lineHeight: "1.75" }}
         >
-          Engineered for Australia's extreme summers & winters. Heat or cool
-          your whole home or a single room with our range of climate solutions.
-          Smart choice cooling. Leading warranties. Easy installation. Leading
-          health features. Made to last. Types: split system air conditioning,
-          multi air conditioning, ducted air conditioning, cassette air
-          conditioning, window air conditioning, gas ducted heating, evaporative
-          cooling
+          Innovation: Leading industry trends through continuous innovation in
+          products and services. <br />
+          Quality: Persistently providing customers with high-quality products
+          and services. <br />
+          Integrity: Being honest and upright, keeping promises.
+          <br />
+          Win-Win: Achieving mutual success among customers, employees,
+          partners, and the company is our ultimate goal!
         </small>
       </Container>
       <Footer />

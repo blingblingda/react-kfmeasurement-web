@@ -22,8 +22,7 @@ const Items = [
       "This product is used for detecting the coating density and thickness of battery cells",
     imgSrc: P_01,
     category: "New Energy Surface Density Measuring Instrument",
-    slug: "first-product",
-
+    detailsMD: "/item1.md",
   },
   {
     id: 2,
@@ -32,8 +31,7 @@ const Items = [
       "For non-contact online detection of the areal density (mass per unit area) of lithium battery cathodes during coating",
     imgSrc: P_02,
     category: "New Energy Surface Density Measuring Instrument",
-    slug: "second-product",
-
+    detailsMD: "/item2.md",
   },
   {
     id: 3,
@@ -42,6 +40,7 @@ const Items = [
       "For non-contact online detection of the areal density (weight per unit area) of the anode coating on lithium batteries",
     imgSrc: P_03,
     category: "New Energy Surface Density Measuring Instrument",
+    detailsMD: "/item3.md",
   },
   {
     id: 4,
@@ -49,6 +48,7 @@ const Items = [
     description: "Intelligent Online Coal Sorting System",
     imgSrc: P_04,
     category: "Mining Instruments and Meters",
+    detailsMD: "/item4.md",
   },
   {
     id: 5,
@@ -57,6 +57,7 @@ const Items = [
       "Coal ash exhibits varying attenuation absorption coefficients for X-rays",
     imgSrc: P_05,
     category: "Mining Instruments and Meters",
+    detailsMD: "/item5.md",
   },
   {
     id: 6,
@@ -64,6 +65,7 @@ const Items = [
     description: "Next-Generation Bulk Material Dynamic Online Weighing System",
     imgSrc: P_06,
     category: "Mining Instruments and Meters",
+    detailsMD: "/item6.md",
   },
   {
     id: 7,
@@ -71,6 +73,7 @@ const Items = [
     description: "Suitable for Rapid Measurement of Dynamic Coal Ash Content",
     imgSrc: P_07,
     category: "Mining Instruments and Meters",
+    detailsMD: "/item7.md",
   },
   {
     id: 8,
@@ -78,6 +81,7 @@ const Items = [
     description: "ICS-DW Dual Scale Frame Combination Belt Scale",
     imgSrc: P_08,
     category: "Mining Instruments and Meters",
+    detailsMD: "/item8.md",
   },
   {
     id: 9,
@@ -86,6 +90,7 @@ const Items = [
       "Access Control and Door Status Monitoring for Explosion-Proof Doors in Substation Buildings",
     imgSrc: P_09,
     category: "Mine Intelligent Power Supply System",
+    detailsMD: "/item9.md",
   },
   {
     id: 10,
@@ -93,6 +98,7 @@ const Items = [
     description: "Monitoring temperature in different environments",
     imgSrc: P_10,
     category: "Mine Intelligent Power Supply System",
+    detailsMD: "/item10.md",
   },
   {
     id: 11,
@@ -101,6 +107,7 @@ const Items = [
       "Improving Power Supply Quality and Ensuring Safe and Economic Operation of the Power System",
     imgSrc: P_11,
     category: "Mine Intelligent Power Supply System",
+    detailsMD: "/item11.md",
   },
   {
     id: 12,
@@ -108,6 +115,7 @@ const Items = [
     description: "Early Prevention and Alarm of Electrical Fires",
     imgSrc: P_12,
     category: "Mine Intelligent Power Supply System",
+    detailsMD: "/item12.md",
   },
   {
     id: 13,
@@ -116,6 +124,7 @@ const Items = [
       "Enhanced the level of intelligence in the mines, achieving the goal of energy saving, consumption reduction, and safety efficiency.",
     imgSrc: P_13,
     category: "Mining Smart Products",
+    detailsMD: "/item13.md",
   },
   {
     id: 14,
@@ -124,6 +133,7 @@ const Items = [
       "EST Series Protection Devices for Next-Generation Substation Integrated Automation System Software Platform",
     imgSrc: P_14,
     category: "Mining Smart Products",
+    detailsMD: "/item14.md",
   },
   {
     id: 15,
@@ -131,6 +141,7 @@ const Items = [
     description: "Real-time monitoring of production data",
     imgSrc: P_15,
     category: "Mining Smart Products",
+    detailsMD: "/item15.md",
   },
 ];
 
