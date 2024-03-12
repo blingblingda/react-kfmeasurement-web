@@ -1,9 +1,9 @@
 import Card from "react-bootstrap/Card";
-import Product from "../../../models/product";
+import {HeaderProduct} from "../../../models/product";
 import { useNavigate } from "react-router-dom";
 
 interface HeaderCardProps {
-  product: Product;
+  product: HeaderProduct;
 }
 
 const HeaderCard = ({ product }: HeaderCardProps) => {

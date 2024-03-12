@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import WebButton from "../../UI/Button/WebButton";
 import HeaderCard from "../../UI/Card/HeaderCard";
+import { HeaderProduct } from "../../../models/product";
 import Product from "../../../models/product";
 import "./Header.scss";
 import productSeriesImg1 from "../../../assets/productSeries1.png";
@@ -17,7 +18,7 @@ import caseImg4 from "../../../assets/case4.png";
 
 interface HeaderProps {}
 
-const products: Product[] = [
+const products: HeaderProduct[] = [
   {
     id: 1,
     imgSrc: productSeriesImg1,
