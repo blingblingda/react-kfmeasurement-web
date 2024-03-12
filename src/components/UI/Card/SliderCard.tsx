@@ -16,7 +16,7 @@ const SliderCard = ({ slide }: SliderCardProps) => {
       >
         <Card.Img src={slide.imgSrc} />
         <Card.Body>
-          <Card.Text>{slide.description}</Card.Text>
+          <Card.Text>{slide.name}</Card.Text>
         </Card.Body>
       </a>
     </Card>
