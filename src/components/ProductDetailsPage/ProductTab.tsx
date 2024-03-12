@@ -53,7 +53,11 @@ const ProductTab = ({ productMD }: ProductTabProps) => {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="bg-light-grey px-5">
+      <Container
+        fluid
+        style={{ height: "1400px" }}
+        className="bg-light-grey px-5"
+      >
         {currentContent === Content.ABOUT ? (
           <About productMD={productMD} />
         ) : (
