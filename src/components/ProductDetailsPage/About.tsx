@@ -5,7 +5,7 @@ import About_1_pic2 from "../../assets/About_1_pic2.jpeg";
 const ComponentAbout = () => {
   return (
     <>
-      <Stack direction="vertical" gap={3}>
+      <Stack direction="vertical" gap={1}>
         <Container className="grey-sec-space bg-light-grey">
           <Row className="g-0">
             <Col lg={8}>
@@ -55,6 +55,13 @@ const ComponentAbout = () => {
               />
             </Col>
           </Row>
+        </Container>
+        <Container fluid className="text-center text-dark-green py-3">
+          <h3 className="mb-5">What Our Clients Say</h3>
+          <p>
+            “KFCK products are impeccable in terms of technology, with excellent precision and efficiency, which is worthy of our full trust.”
+          </p>
+          <p>_____</p>
         </Container>
       </Stack>
     </>
