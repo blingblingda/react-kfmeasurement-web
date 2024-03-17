@@ -1,1 +1,3 @@
-###item 11
+## Electric Power Quality Monitoring System
+
+The electric energy quality monitoring system is primarily capable of performing three-phase electrical parameter measurements (three-phase voltage, three-phase current, active power, reactive power, apparent power, power factor, frequency, etc.), 31st harmonic measurement, power grid quality analysis (voltage crest factor, current K factor, telephone harmonic factor, voltage and current imbalance, voltage and current sequence components, etc.), four-quadrant electric energy metering, data display, collection, and transmission. It can provide appropriate design solutions for power quality issues specific to different industry types and load types, with the aim of improving the quality of power supply and ensuring the safe and economical operation of the power system.
