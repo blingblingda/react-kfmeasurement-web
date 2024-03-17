@@ -1,12 +1,12 @@
 import ProductCard from "../UI/Card/ProductCard";
 import { Container, Row, Col } from "react-bootstrap";
-import Product from "../../models/product";
+import { ProductFull } from "../../models/product";
 
 interface ProductListProps {
-  filteredItems: Product[];
+  filteredItems: ProductFull[];
 }
 
-const chunkArray = (array: Product[], size: number) => {
+const chunkArray = (array: ProductFull[], size: number) => {
   const chunkedArr = [];
   for (let i = 0; i < array.length; i += size) {
     chunkedArr.push(array.slice(i, i + size));
@@ -15,7 +15,7 @@ const chunkArray = (array: Product[], size: number) => {
 };
 
 const ProductList = ({ filteredItems }: ProductListProps) => {
-  const rows: Product[][] = chunkArray(filteredItems, 3);
+  const rows: ProductFull[][] = chunkArray(filteredItems, 3);
 
   return (
     <Container>

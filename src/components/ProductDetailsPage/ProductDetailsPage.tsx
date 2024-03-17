@@ -6,7 +6,7 @@ import Items from "../UI/ItemList/itemList";
 import WebButton from "../UI/Button/WebButton";
 import ProductFeature from "./ProductFeature";
 import ProductTab from "./ProductTab";
-import Product from "../../models/product";
+import { ProductFull } from "../../models/product";
 
 type productIdParams = {
   productId: string;
@@ -16,7 +16,7 @@ const ProductDetailsPage = () => {
   const navigate = useNavigate();
   const { productId } = useParams<productIdParams>();
 
-  const product: Product = Items.filter(
+  const product: ProductFull = Items.filter(
     (item) => item.id.toString() === productId
   )[0];
 

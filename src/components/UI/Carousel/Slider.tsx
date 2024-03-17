@@ -1,7 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import SliderCard from "../Card/SliderCard";
 import Items from "../ItemList/itemList";
-
 import { Stack } from "react-bootstrap";
 
 const slides = Items;
@@ -37,6 +36,6 @@ const Slider = () => {
       </Carousel>
     </div>
   );
-}
+};
 
 export default Slider;

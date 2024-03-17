@@ -13,8 +13,9 @@ import P_12 from "../../../assets/Products/p12.png";
 import P_13 from "../../../assets/Products/p13.png";
 import P_14 from "../../../assets/Products/p14.png";
 import P_15 from "../../../assets/Products/p15.jpg";
+import { ProductFull } from "../../../models/product";
 
-const Items = [
+const Items: ProductFull[] = [
   {
     id: 1,
     name: "Laser Beam Measurement Integrated Machine",

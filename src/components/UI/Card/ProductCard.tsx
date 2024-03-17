@@ -1,10 +1,10 @@
 import Card from "react-bootstrap/Card";
-import Product from "../../../models/product";
+import { ProductFull } from "../../../models/product";
 import WebButton from "../Button/WebButton";
 import { useNavigate } from "react-router-dom";
 
 interface ProductCardProps {
-  product: Product;
+  product: ProductFull;
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {

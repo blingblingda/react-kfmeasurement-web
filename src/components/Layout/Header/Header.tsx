@@ -3,87 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import WebButton from "../../UI/Button/WebButton";
 import HeaderCard from "../../UI/Card/HeaderCard";
+import HeaderProductsList from "../../UI/ItemList/headerProductList";
 import { HeaderProduct } from "../../../models/product";
-import Product from "../../../models/product";
 import "./Header.scss";
-import productSeriesImg1 from "../../../assets/productSeries1.png";
-import productSeriesImg2 from "../../../assets/productSeries2.png";
-import productSeriesImg3 from "../../../assets/productSeries3.png";
-import productSeriesImg4 from "../../../assets/productSeries4.png";
-import productSeriesImg5 from "../../../assets/productSeries5.jpg";
-import caseImg1 from "../../../assets/case1.png";
-import caseImg2 from "../../../assets/case2.png";
-import caseImg3 from "../../../assets/case3.png";
-import caseImg4 from "../../../assets/case4.png";
+import casesList from "../../UI/ItemList/caseList";
 
-interface HeaderProps {}
-
-const products: HeaderProduct[] = [
-  {
-    id: 1,
-    imgSrc: productSeriesImg1,
-    description: "Surface density meter",
-    category: "series_1",
-    path: "/products",
-  },
-  {
-    id: 2,
-    imgSrc: productSeriesImg2,
-    description: "Mining instrumentation",
-    category: "series_2",
-    path: "/products",
-  },
-  {
-    id: 3,
-    imgSrc: productSeriesImg3,
-    description: "Power Supply System",
-    category: "series_3",
-    path: "/products",
-  },
-  {
-    id: 4,
-    imgSrc: productSeriesImg4,
-    description: "Intelligent Products",
-    category: "series_4",
-    path: "/products",
-  },
-  {
-    id: 5,
-    imgSrc: productSeriesImg5,
-    description: "All Products",
-    category: "",
-    path: "/products",
-  },
-];
-
-const cases: Product[] = [
-  {
-    id: 1,
-    imgSrc: caseImg1,
-    description: "GuangWang pty ltd",
-    category: "case_1",
-  },
-  {
-    id: 2,
-    imgSrc: caseImg2,
-    description: "Jizhong Energy",
-    category: "case_2",
-  },
-  {
-    id: 3,
-    imgSrc: caseImg3,
-    description: "Huaibei Mining",
-    category: "case_3",
-  },
-  {
-    id: 4,
-    imgSrc: caseImg4,
-    description: "Yan Energy Group",
-    category: "case_4",
-  },
-];
-
-const Header = (props: HeaderProps) => {
+const Header = () => {
+  const products: HeaderProduct[] = HeaderProductsList;
+  const cases: HeaderProduct[] = casesList;
   const navigate = useNavigate();
 
   const handleHomeClick: () => void = () => {

@@ -1,13 +1,13 @@
 import Card from "react-bootstrap/Card";
-import Product from "../../../models/product";
+import { ProductFull } from "../../../models/product";
 
 interface SliderCardProps {
-  slide: Product;
+  slide: ProductFull;
 }
 
 const SliderCard = ({ slide }: SliderCardProps) => {
   return (
-    <Card className="boarder border-white" style={{width: '22rem'}}>
+    <Card className="boarder border-white" style={{ width: "22rem" }}>
       <a
         className="text-dark-green text-decoration-none"
         href="http://www.google.com"

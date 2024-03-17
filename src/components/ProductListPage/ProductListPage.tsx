@@ -6,10 +6,10 @@ import Footer from "../Layout/Footer/Footer";
 import ProductList from "./ProductList";
 import ProductFilter from "./ProductFilter";
 import Items from "../UI/ItemList/itemList";
-import Product from "../../models/product";
+import { ProductFull } from "../../models/product";
 
 const ProductListPage = () => {
-  const products: Product[] = Items;
+  const products: ProductFull[] = Items;
 
   const [filteredItems, setFilteredItems] = useState(products);
   const [queryKeywords, setQueryKeywords] = useState([] as string[]);
@@ -36,7 +36,7 @@ const ProductListPage = () => {
     }
   }, [products, queryKeywords]);
 
-  const handleHomeClick: () => void = () => {
+  const handleHomeClick = () => {
     navigate("/");
   };
 

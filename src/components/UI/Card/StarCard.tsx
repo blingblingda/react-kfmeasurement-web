@@ -1,9 +1,9 @@
 import Card from "react-bootstrap/Card";
 import WebButton from "../Button/WebButton";
-import Product from "../../../models/product";
+import { ProductFull } from "../../../models/product";
 
 interface StarCardProps {
-  product: Product;
+  product: ProductFull;
 }
 
 const StarCard = ({ product }: StarCardProps) => {

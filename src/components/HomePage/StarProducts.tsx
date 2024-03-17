@@ -1,42 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import StarCard from "../UI/Card/StarCard";
-import Star_1 from "../../assets/star_1.png";
-import Star_2 from "../../assets/star_2.png";
-import Star_3 from "../../assets/star_3.png";
-import Star_4 from "../../assets/star_4.png";
-
-const products = [
-  {
-    id: 1,
-    name: "Star Proudt 1",
-    description: "Passive Ash Content Analyzer Series",
-    imgSrc: Star_1,
-    category: "series_1"
-  },
-  {
-    id: 2,
-    name: "Star Proudt 2",
-    description: "X/β-ray Surface Density Measurement Instrument Series",
-    imgSrc: Star_2,
-    category: "series_2"
-  },
-  {
-    id: 3,
-    name: "Star Proudt 3",
-    description: "Explosion-proof/General Electronic Belt Scale Series",
-    imgSrc: Star_3,
-    category: "series_3"
-  },
-  {
-    id: 4,
-    name: "Star Proudt 4",
-    description: "KJ357 Mining Power Monitoring System",
-    imgSrc: Star_4,
-    category: "series_4"
-  },
-];
+import Items from "../UI/ItemList/itemList";
 
 const StarProducts = () => {
+  const starProducts = Items.slice(0, 4);
+
   return (
     <>
       <Container className="text-dark-green light-sec-space">
@@ -46,7 +14,7 @@ const StarProducts = () => {
           </Col>
         </Row>
         <Row>
-          {products.map((product) => (
+          {starProducts.map((product) => (
             <Col key={product.id} sm={6} md={3} lg={3}>
               <StarCard product={product} />
             </Col>
