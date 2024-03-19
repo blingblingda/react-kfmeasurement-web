@@ -24,6 +24,7 @@ const Items: ProductFull[] = [
     imgSrc: P_01,
     category: "New Energy Surface Density Measuring Instrument",
     detailsMD: "/item1.md",
+    aboutSrc: [0, 1],
   },
   {
     id: 2,
@@ -33,6 +34,7 @@ const Items: ProductFull[] = [
     imgSrc: P_02,
     category: "New Energy Surface Density Measuring Instrument",
     detailsMD: "/item2.md",
+    aboutSrc: [5, 3],
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ const Items: ProductFull[] = [
     imgSrc: P_03,
     category: "New Energy Surface Density Measuring Instrument",
     detailsMD: "/item3.md",
+    aboutSrc: [2, 4],
   },
   {
     id: 4,
@@ -50,6 +53,7 @@ const Items: ProductFull[] = [
     imgSrc: P_04,
     category: "Mining Instruments and Meters",
     detailsMD: "/item4.md",
+    aboutSrc: [3, 0],
   },
   {
     id: 5,
@@ -59,6 +63,7 @@ const Items: ProductFull[] = [
     imgSrc: P_05,
     category: "Mining Instruments and Meters",
     detailsMD: "/item5.md",
+    aboutSrc: [5, 2],
   },
   {
     id: 6,
@@ -67,6 +72,7 @@ const Items: ProductFull[] = [
     imgSrc: P_06,
     category: "Mining Instruments and Meters",
     detailsMD: "/item6.md",
+    aboutSrc: [1, 3],
   },
   {
     id: 7,
@@ -75,6 +81,7 @@ const Items: ProductFull[] = [
     imgSrc: P_07,
     category: "Mining Instruments and Meters",
     detailsMD: "/item7.md",
+    aboutSrc: [5, 4],
   },
   {
     id: 8,
@@ -83,6 +90,7 @@ const Items: ProductFull[] = [
     imgSrc: P_08,
     category: "Mining Instruments and Meters",
     detailsMD: "/item8.md",
+    aboutSrc: [1, 0],
   },
   {
     id: 9,
@@ -92,6 +100,7 @@ const Items: ProductFull[] = [
     imgSrc: P_09,
     category: "Mine Intelligent Power Supply System",
     detailsMD: "/item9.md",
+    aboutSrc: [2, 4],
   },
   {
     id: 10,
@@ -100,6 +109,7 @@ const Items: ProductFull[] = [
     imgSrc: P_10,
     category: "Mine Intelligent Power Supply System",
     detailsMD: "/item10.md",
+    aboutSrc: [0, 5],
   },
   {
     id: 11,
@@ -109,6 +119,7 @@ const Items: ProductFull[] = [
     imgSrc: P_11,
     category: "Mine Intelligent Power Supply System",
     detailsMD: "/item11.md",
+    aboutSrc: [1, 3],
   },
   {
     id: 12,
@@ -117,6 +128,7 @@ const Items: ProductFull[] = [
     imgSrc: P_12,
     category: "Mine Intelligent Power Supply System",
     detailsMD: "/item12.md",
+    aboutSrc: [5, 4],
   },
   {
     id: 13,
@@ -126,6 +138,7 @@ const Items: ProductFull[] = [
     imgSrc: P_13,
     category: "Mining Smart Products",
     detailsMD: "/item13.md",
+    aboutSrc: [2, 3],
   },
   {
     id: 14,
@@ -135,6 +148,7 @@ const Items: ProductFull[] = [
     imgSrc: P_14,
     category: "Mining Smart Products",
     detailsMD: "/item14.md",
+    aboutSrc: [3, 0],
   },
   {
     id: 15,
@@ -143,6 +157,7 @@ const Items: ProductFull[] = [
     imgSrc: P_15,
     category: "Mining Smart Products",
     detailsMD: "/item15.md",
+    aboutSrc: [1, 5],
   },
 ];
 
