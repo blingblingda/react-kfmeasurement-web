@@ -12,4 +12,5 @@ export interface HeaderProduct extends Product {
 export interface ProductFull extends Product {
   name: string;
   detailsMD: string;
+  aboutSrc: [number, number];
 }

@@ -10,9 +10,10 @@ const enum Content {
 
 interface ProductTabProps {
   productMD: string;
+  aboutSrc: [number, number];
 }
 
-const ProductTab = ({ productMD }: ProductTabProps) => {
+const ProductTab = ({ productMD, aboutSrc }: ProductTabProps) => {
   const [currentContent, setCurrentContent] = useState(Content.ABOUT);
   const handleContentSwitch = (contentType: Content) => {
     setCurrentContent(contentType);
@@ -55,7 +56,7 @@ const ProductTab = ({ productMD }: ProductTabProps) => {
       </Container>
       <Container fluid className="bg-light-grey px-5">
         {currentContent === Content.ABOUT ? (
-          <About />
+          <About aboutSrc={aboutSrc}/>
         ) : (
           <Details productMD={productMD} />
         )}
