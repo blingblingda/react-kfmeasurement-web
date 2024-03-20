@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { Col, Container, Row, Card, Stack } from "react-bootstrap";
+import { Col, Container } from "react-bootstrap";
 import Footer from "../Layout/Footer/Footer";
 import Header from "../Layout/Header/Header";
 import casesList from "../UI/ItemList/caseList";
@@ -28,16 +28,14 @@ const CasePage = () => {
           setContent(text);
         });
     } else {
-      console.log("BOO!");
+      setContent("Case not found. Please try a different one.");
     }
   }, []);
 
   const handleHomeClick: () => void = () => {
     navigate("/");
   };
-  const handleCasesClick: () => void = () => {
-    navigate("/:caseName");
-  };
+
   return (
     <>
       <Header />
@@ -47,12 +45,7 @@ const CasePage = () => {
             <li className="path-text" onClick={handleHomeClick}>
               Home
             </li>
-            <li
-              className="li-before text-dark-green"
-              onClick={handleCasesClick}
-            >
-              {caseItem?.description}
-            </li>
+            <li className="li-before text-dark-green">{caseName}</li>
           </Col>
         </Container>
         <Container>
