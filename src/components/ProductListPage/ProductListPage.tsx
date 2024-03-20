@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import Header from "../Layout/Header/Header";
 import Footer from "../Layout/Footer/Footer";
 import ProductList from "./ProductList";
@@ -15,7 +15,17 @@ const ProductListPage = () => {
   const [queryKeywords, setQueryKeywords] = useState([] as string[]);
   const navigate = useNavigate();
 
+  const location = useLocation();
+  const category = location.state.category;
+
+  useEffect(() => {
+    if (category) {
+      setQueryKeywords([category]);
+    }
+  }, [category]);
+
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(event);
     const isChecked = event.target.checked;
     const category = event.target.id;
 
@@ -55,7 +65,10 @@ const ProductListPage = () => {
         <Container className="py-4">
           <Row className="justify-content-center">
             <Col sm={12} md={12} lg={3} className="bg-light-grey">
-              <ProductFilter catSelect={handleCheckboxChange} />
+              <ProductFilter
+                catSelect={handleCheckboxChange}
+                selectedCategories={queryKeywords}
+              />
             </Col>
             <Col sm={12} md={12} lg={9}>
               <ProductList filteredItems={filteredItems} />

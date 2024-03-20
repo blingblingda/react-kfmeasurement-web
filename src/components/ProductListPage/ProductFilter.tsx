@@ -1,10 +1,14 @@
 import Form from "react-bootstrap/Form";
 
 interface ProductFilterProps {
+  selectedCategories: string[];
   catSelect: (event: any) => void;
 }
 
-const ProductFilter = ({ catSelect }: ProductFilterProps) => {
+const ProductFilter = ({
+  catSelect,
+  selectedCategories,
+}: ProductFilterProps) => {
   return (
     <>
       <aside
@@ -25,6 +29,7 @@ const ProductFilter = ({ catSelect }: ProductFilterProps) => {
                 name="category"
                 id={`${category}`}
                 label={`${category}`}
+                checked={selectedCategories.includes(category)}
                 onChange={catSelect}
               />
             </div>

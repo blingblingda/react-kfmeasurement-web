@@ -1,5 +1,5 @@
 import Card from "react-bootstrap/Card";
-import {HeaderProduct} from "../../../models/product";
+import { HeaderProduct } from "../../../models/product";
 import { useNavigate } from "react-router-dom";
 
 interface HeaderCardProps {
@@ -11,7 +11,7 @@ const HeaderCard = ({ product }: HeaderCardProps) => {
 
   const handleRedirectClick = () => {
     if (typeof product.path === "string") {
-      navigate(product.path);
+      navigate(product.path, { state: { category: product.category } });
     } else {
       console.warn("Attempted to navigate without a valid path");
     }
