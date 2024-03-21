@@ -24,7 +24,7 @@ const ProductDetailsPage = () => {
     navigate("/");
   };
   const handleProductsClick: () => void = () => {
-    navigate("/products");
+    navigate("/products", { state: { category: ""} });
   };
   const handleContactClick: () => void = () => {
     navigate("/");

@@ -3,6 +3,7 @@ import HomePage from "./components/HomePage/HomePage";
 import ProductListPage from "./components/ProductListPage/ProductListPage";
 import ProductDetailsPage from "./components/ProductDetailsPage/ProductDetailsPage";
 import CasePage from "./components/CasePage/CasePage";
+import WhyPage from "./components/WhyPage/WhyPage";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/products" element={<ProductListPage />} />
         <Route path="/products/:productId" element={<ProductDetailsPage />} />
         <Route path="/:caseName" element={<CasePage />} />
+        <Route path="/why-us" element={<WhyPage />} />
       </Routes>
     </BrowserRouter>
   );
