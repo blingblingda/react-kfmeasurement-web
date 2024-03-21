@@ -19,7 +19,7 @@ const casesList: CaseFull[] = [
     description: "Jizhong Energy",
     category: "jizhong",
     path: "/jizhong",
-    detailsMD: "",
+    detailsMD: "/case2.md",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const casesList: CaseFull[] = [
     description: "Huaibei Mining",
     category: "huaibei",
     path: "/huaibei",
-    detailsMD: "",
+    detailsMD: "/case3.md",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const casesList: CaseFull[] = [
     description: "Yan Energy Group",
     category: "yanenergy",
     path: "/yanenergy",
-    detailsMD: "",
+    detailsMD: "/case4.md",
   },
 ];
 
