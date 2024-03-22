@@ -51,7 +51,7 @@ const Header = () => {
                 </NavDropdown.Item>
               ))}
             </NavDropdown>
-            <Nav.Link href="#link" className="text-dark-green link-style mx-5">
+            <Nav.Link href="/why-us" className="text-dark-green link-style mx-5">
               Why KFCK
             </Nav.Link>
           </Nav>
