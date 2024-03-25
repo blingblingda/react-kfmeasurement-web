@@ -1,10 +1,8 @@
 import React from "react";
 import Header from "../Layout/Header/Header";
-import Container from "react-bootstrap/esm/Container";
 import Footer from "../Layout/Footer/Footer";
-import { Col } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import WhyBanner from "./WhyBanner";
+import WhyJourney from "./WhyJourney";
 
 const WhyPage = () => {
   return (
@@ -12,6 +10,7 @@ const WhyPage = () => {
       <Header />
       <main className="bg-light-grey">
         <WhyBanner />
+        <WhyJourney />
       </main>
       <Footer />
     </>
