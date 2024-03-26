@@ -4,4 +4,5 @@ export default interface Symbol {
   id: number;
   icon: Icon;
   text: string;
+  description?: string;
 }
