@@ -14,8 +14,8 @@ const WhyPage = () => {
         <WhyBanner />
         <BrandStoryVideo />
         <CompanyCulture />
-        <Strategy />
         <WhyJourney />
+        <Strategy />
       </main>
       <Footer />
     </>
