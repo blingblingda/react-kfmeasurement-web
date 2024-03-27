@@ -5,6 +5,7 @@ import WhyJourney from "./WhyJourney";
 import BrandStoryVideo from "./BrandStoryVideo";
 import CompanyCulture from "./CompanyCulture";
 import Strategy from "./Strategy";
+import Partnership from "./Partnership";
 
 const WhyPage = () => {
   return (
@@ -16,6 +17,7 @@ const WhyPage = () => {
         <CompanyCulture />
         <WhyJourney />
         <Strategy />
+        <Partnership />
       </main>
       <Footer />
     </>
