@@ -6,7 +6,7 @@ const WhyJourney = () => {
   return (
     <>
       <Stack gap={5} className="py-5 text-center text-dark-green bg-white">
-        <h2>26 Years of Research and Progress</h2>
+        <h2 className="fs-2">26 Years of Research and Progress</h2>
         <img
           src={Journey}
           alt="why journey pic"

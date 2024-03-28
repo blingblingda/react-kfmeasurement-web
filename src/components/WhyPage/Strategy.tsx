@@ -4,8 +4,8 @@ import Strategy2 from "../../assets/Strategy2.jpg";
 
 const Strategy = () => {
   return (
-    <>
-      <Container className="grey-sec-space bg-white">
+    <div className="bg-white py-4">
+      <Container className="light-sec-space bg-light-grey">
         <Row>
           <Col lg={8} className="px-0 py-0">
             <img src={Strategy1} alt="About us pic" className="w-100" />
@@ -29,7 +29,7 @@ const Strategy = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="grey-sec-space bg-white">
+      <Container className="light-sec-space bg-light-grey">
         <Row>
           <Col lg={4} className="p-4">
             <h3 className="display-6 text-dark-green mb-4">Brand Advantage</h3>
@@ -52,7 +52,7 @@ const Strategy = () => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 

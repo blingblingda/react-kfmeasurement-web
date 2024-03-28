@@ -36,7 +36,7 @@ const CompanyCulture = () => {
       >
         <Row className="justify-content-md-center mb-5">
           <Col>
-            <h2>Company Vision</h2>
+            <h2 className="fs-2">Company Vision</h2>
           </Col>
         </Row>
         <Row className="justify-content-md-center">
