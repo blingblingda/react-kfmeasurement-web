@@ -17,6 +17,10 @@ const Header = () => {
     navigate("/");
   };
 
+  const handleContact = () => {
+    navigate("/contactus/");
+  };
+
   return (
     <Navbar id="top" expand="lg" className="bg-body-transparent custom-navbar">
       <Container>
@@ -56,7 +60,8 @@ const Header = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <WebButton btnStyle="dark" onClick={() => console.log("clicked")}>
+        {/* <WebButton btnStyle="dark" onClick={() => console.log("clicked")}> */}
+        <WebButton btnStyle="dark" onClick={handleContact}>
           Contact Us
         </WebButton>
       </Container>

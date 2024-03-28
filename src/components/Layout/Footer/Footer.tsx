@@ -1,11 +1,17 @@
 import * as React from "react";
-
+import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.scss";
 import { ArrowUp } from "react-bootstrap-icons";
 import MyButton from "../../UI/Button/WebButton";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleContact = () => {
+    navigate("/contactus/");
+  };
+
   return (
     <footer className="footer text-white">
       <div className="footer-top pt-5">
@@ -72,7 +78,7 @@ const Footer = () => {
               >
                 <ArrowUp /> Back to Top{" "}
               </a>
-              <MyButton btnStyle="light" onClick={() => console.log("clicked")}>
+              <MyButton btnStyle="light" onClick={handleContact}>
                 Contact Us
               </MyButton>
             </Col>
