@@ -10,12 +10,12 @@
     "@types/node": "^20.11.16",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.18",
-    "animejs": "^3.2.2",
     "bootstrap": "^5.3.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.0",
     "react-bootstrap-icons": "^1.10.3",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.22.1",
     "react-scripts": "5.0.1",
@@ -48,6 +48,6 @@
     ]
   },
   "devDependencies": {
-    "@types/animejs": "^3.1.12"
+    "@types/react-google-recaptcha": "^2.1.9"
   }
 }
