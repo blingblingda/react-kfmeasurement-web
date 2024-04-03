@@ -9,7 +9,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const handleContact = () => {
-    navigate("/contactus/");
+    navigate("/contact-us");
   };
 
   return (
