@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import Header from "../Layout/Header/Header";
 import Footer from "../Layout/Footer/Footer";
-import { Col, Container, Row, Form, Button, Image } from "react-bootstrap";
+import { Col, Container, Row, Form, Image, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import contactUsImg from "./contactUsImg.png";
-import WebButton from "../UI/Button/WebButton";
 // import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "@emailjs/browser";
 
 const ContactUsPage = () => {
   interface Field {
     name: string;
     email: string;
-    phoneNumber: string;
+    contactNumber: string;
     reason: string;
     productType: string;
     message: string;
@@ -24,7 +24,7 @@ const ContactUsPage = () => {
   const [form, setForm] = React.useState<Field>({
     name: "",
     email: "",
-    phoneNumber: "",
+    contactNumber: "",
     reason: "",
     productType: "",
     message: "",
@@ -45,7 +45,7 @@ const ContactUsPage = () => {
   };
 
   const validateForm = () => {
-    const { name, email, phoneNumber, reason, productType, message } = form;
+    const { name, email, contactNumber, reason, productType, message } = form;
     const newErrors: Errors = {};
 
     if (!name) {
@@ -54,8 +54,8 @@ const ContactUsPage = () => {
     if (!email || !email.includes("@")) {
       newErrors.email = "Please enter your correct email address";
     }
-    if (!phoneNumber) {
-      newErrors.phoneNumber = "Please enter your phone number";
+    if (!contactNumber) {
+      newErrors.contactNumber = "Please enter your phone number";
     }
     if (!reason) {
       newErrors.reason = "Please select an enquiry type";
@@ -70,14 +70,28 @@ const ContactUsPage = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e: any) => {
+  useEffect(() => emailjs.init("pLwnzx0WGOSa1kGXv"), []);
+
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
+    const serviceId = "service_gutq8it";
+    const templateId = "template_o4sou4h";
     const formErrors = validateForm();
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
     } else {
-      console.log("form submit");
-      console.log(form);
+      try {
+        await emailjs.send(serviceId, templateId, {
+          name: form.name,
+          email: form.email,
+          contactNumber: form.contactNumber,
+          reason: form.reason,
+          productType: form.productType,
+          message: form.message,
+        });
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
@@ -111,11 +125,14 @@ const ContactUsPage = () => {
                   Thank you for getting in touch with KFCK.
                 </p>
 
-                <Form className="mt-5 fw-bold">
+                <Form
+                  className="mt-5 fw-bold"
+                  onSubmit={(e) => handleSubmit(e)}
+                >
                   <Form.Group className="mb-3" controlId="name">
                     <Form.Label>Full Name *</Form.Label>
                     <Form.Control
-                      type="username"
+                      name="name"
                       placeholder="Full name"
                       value={form.name}
                       onChange={(e) => setField("name", e.target.value)}
@@ -129,7 +146,7 @@ const ContactUsPage = () => {
                   <Form.Group className="mb-3" controlId="email">
                     <Form.Label>Email address *</Form.Label>
                     <Form.Control
-                      type="email"
+                      name="email"
                       placeholder="jane@example.com"
                       value={form.email}
                       onChange={(e) => setField("email", e.target.value)}
@@ -143,27 +160,29 @@ const ContactUsPage = () => {
                     </Form.Control.Feedback>
                   </Form.Group>
 
-                  <Form.Group className="mb-3" controlId="phoneNumber">
+                  <Form.Group className="mb-3" controlId="contactNumber">
                     <Form.Label>Contact Number</Form.Label>
                     <Form.Control
-                      type="phoneNumber"
+                      name="contactNumber"
                       placeholder="0412345678 or 039901234"
-                      value={form.phoneNumber}
-                      onChange={(e) => setField("phoneNumber", e.target.value)}
-                      isInvalid={!!errors.phoneNumber}
+                      value={form.contactNumber}
+                      onChange={(e) =>
+                        setField("contactNumber", e.target.value)
+                      }
+                      isInvalid={!!errors.contactNumber}
                     />
                     <Form.Control.Feedback type="invalid">
-                      {errors.phoneNumber}
+                      {errors.contactNumber}
                     </Form.Control.Feedback>
                   </Form.Group>
 
                   <Form.Group className="mb-3" controlId="reason">
                     <Form.Label>Contact reason</Form.Label>
                     <Form.Select
+                      name="reason"
                       value={form.reason}
                       isInvalid={!!errors.reason}
                       onChange={(e) => {
-                        console.log(e.target.value);
                         setField("reason", e.target.value);
                       }}
                     >
@@ -182,10 +201,10 @@ const ContactUsPage = () => {
                   <Form.Group className="mb-3" controlId="productType">
                     <Form.Label>Product Type</Form.Label>
                     <Form.Select
+                      name="productType"
                       value={form.productType}
                       isInvalid={!!errors.productType}
                       onChange={(e) => {
-                        console.log(e.target.value);
                         setField("productType", e.target.value);
                       }}
                     >
@@ -212,6 +231,7 @@ const ContactUsPage = () => {
                     <Form.Label>Message *</Form.Label>
                     <Form.Control
                       as="textarea"
+                      name="message"
                       rows={3}
                       placeholder="Enter your message"
                       value={form.message}
@@ -231,17 +251,13 @@ const ContactUsPage = () => {
                     />
                   </Form.Group> */}
 
-                  {/* <Button
+                  <Button
                     variant="outline-dark-green"
                     type="submit"
-                    onClick={handleSubmit}
                     className="my-4"
                   >
                     Submit
-                  </Button> */}
-                  <WebButton btnStyle="dark" onClick={handleSubmit}>
-                    Submit
-                  </WebButton>
+                  </Button>
                 </Form>
               </Col>
             </Row>
