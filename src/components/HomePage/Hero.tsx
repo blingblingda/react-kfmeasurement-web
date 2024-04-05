@@ -7,7 +7,7 @@ const Hero = () => {
   const navigate = useNavigate();
 
   const handleProductClick: () => void = () => {
-    navigate("/products");
+    navigate("/products", { state: { category: "" } });
   };
 
   return (

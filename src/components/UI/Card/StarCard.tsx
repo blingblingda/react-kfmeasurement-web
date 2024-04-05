@@ -12,6 +12,7 @@ const StarCard = ({ product }: StarCardProps) => {
       border="light"
       text="dark-green"
       className="d-flex flex-column justify-content-between align-items-center star-card-height"
+      style={{ height: "26rem" }}
     >
       <Card.Title>{product.name}</Card.Title>
       <Card.Img variant="top" src={product.imgSrc} />
