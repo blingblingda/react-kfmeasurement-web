@@ -1,9 +1,14 @@
-import React from "react";
 import { Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import BannerImg from "../../assets/whyUsBanner.jpg";
 import WebButton from "../UI/Button/WebButton";
 
 const WhyUs = () => {
+  const navigate = useNavigate();
+  const handleWhyClick: () => void = () => {
+    navigate("why-us");
+  };
+
   return (
     <div className="grey-sec-space bg-light-grey fluid">
       <Container
@@ -21,12 +26,15 @@ const WhyUs = () => {
             <br />
             Instruments made for China
           </h1>
-          <p className="col-md-7 fs-5 text-white">
-            Using a series of utilities, you can create this jumbotron, just
-            like the one in previous versions of Bootstrap. Check out the
-            examples below for how you can remix and restyle it to your liking.
+          <p className="col-md-7 fs-5 text-white py-4">
+            Kaifeng Measurement & Control Technology Co., Ltd. was founded in
+            1992, specializing in the research and development, production, and
+            project design and construction of new products in nuclear
+            instrumentation, industrial on-site measurement and control, and
+            automation systems. The company holds numerous patents and software
+            copyrights, among other independent intellectual property rights.
           </p>
-          <WebButton btnStyle="light" onClick={() => console.log("clicked")}>
+          <WebButton btnStyle="light" onClick={handleWhyClick}>
             Why us
           </WebButton>
         </div>

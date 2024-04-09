@@ -3,7 +3,7 @@ import StarCard from "../UI/Card/StarCard";
 import Items from "../UI/ItemList/itemList";
 
 const StarProducts = () => {
-  const starProducts = Items.slice(0, 4);
+  const starProducts = Items.slice(6, 10);
 
   return (
     <>

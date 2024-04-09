@@ -1,7 +1,6 @@
-import Carousel from "react-bootstrap/Carousel";
-import { Container } from "react-bootstrap";
-import banner_1 from "../../assets/banner_1.png";
-import banner_2 from "../../assets/banner_2.png";
+import { Container, Carousel } from "react-bootstrap";
+import banner_1 from "../../assets/banner_1.jpg";
+import banner_2 from "../../assets/banner_2.jpg";
 
 const Banner = () => {
   return (
@@ -9,7 +8,12 @@ const Banner = () => {
       <Container className="light-sec-space">
         <Carousel fade controls={false} indicators>
           <Carousel.Item>
-            <img className="d-block w-100" src={banner_1} alt="First slide" />
+            <img
+              className="d-block"
+              style={{ width: "100rem", height: "30rem" }}
+              src={banner_1}
+              alt="First slide"
+            />
             <Carousel.Caption className="text-white">
               <h2>Technical talent is the core</h2>
               <p>
@@ -19,7 +23,12 @@ const Banner = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100" src={banner_2} alt="Second slide" />
+            <img
+              className="d-block w-100"
+              style={{ width: "100rem", height: "30rem" }}
+              src={banner_2}
+              alt="Second slide"
+            />
             <Carousel.Caption className="text-white">
               <h2>National High-Tech Enterprise</h2>
               <p>

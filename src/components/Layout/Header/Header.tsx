@@ -4,21 +4,22 @@ import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import WebButton from "../../UI/Button/WebButton";
 import HeaderCard from "../../UI/Card/HeaderCard";
 import HeaderProductsList from "../../UI/ItemList/headerProductList";
+import casesList from "../../UI/ItemList/caseList";
 import { HeaderProduct } from "../../../models/product";
 import "./Header.scss";
-import casesList from "../../UI/ItemList/caseList";
 
 const Header = () => {
   const products: HeaderProduct[] = HeaderProductsList;
   const cases: HeaderProduct[] = casesList;
+
   const navigate = useNavigate();
 
   const handleHomeClick: () => void = () => {
     navigate("/");
   };
 
-  const handleContact = () => {
-    navigate("/contactus/");
+  const handleContact: () => void = () => {
+    navigate("/contact-us");
   };
 
   return (
@@ -55,12 +56,14 @@ const Header = () => {
                 </NavDropdown.Item>
               ))}
             </NavDropdown>
-            <Nav.Link href="/why-us" className="text-dark-green link-style mx-5">
+            <Nav.Link
+              href="/why-us"
+              className="text-dark-green link-style mx-5"
+            >
               Why KFCK
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        {/* <WebButton btnStyle="dark" onClick={() => console.log("clicked")}> */}
         <WebButton btnStyle="dark" onClick={handleContact}>
           Contact Us
         </WebButton>
