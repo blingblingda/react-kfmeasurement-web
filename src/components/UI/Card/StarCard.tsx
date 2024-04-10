@@ -9,13 +9,13 @@ interface StarCardProps {
 const StarCard = ({ product }: StarCardProps) => {
   return (
     <Card
-      border="light"
+      border="white"
       text="dark-green"
       className="d-flex flex-column justify-content-between align-items-center star-card-height"
       style={{ height: "26rem" }}
     >
       <Card.Title>{product.name}</Card.Title>
-      <Card.Img variant="top" src={product.imgSrc} />
+      <Card.Img variant="top" src={product.imgSrc} className="mt-3" />
       <Card.Body className="d-flex flex-column justify-content-between align-items-center text-center">
         <Card.Text>{product.description}</Card.Text>
         <WebButton btnStyle="dark" onClick={() => console.log("clicked")}>

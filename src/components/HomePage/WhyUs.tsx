@@ -8,6 +8,9 @@ const WhyUs = () => {
   const handleWhyClick: () => void = () => {
     navigate("why-us");
   };
+  const handleProductClick: () => void = () => {
+    navigate("/products", { state: { category: "" } });
+  };
 
   return (
     <div className="grey-sec-space bg-light-grey fluid">
@@ -40,13 +43,15 @@ const WhyUs = () => {
         </div>
       </Container>
       <Container className="my-5 text-dark-green text-center">
-        <h3 className="mb-4">Stocked and supported by Reece</h3>
+        <h3 className="mb-4">
+          Leading industry trends, continuously innovating products and services
+        </h3>
         <p className="w-50 mx-auto mb-4">
-          Kaden is available at Reece, Metalflex and Actrol branches. You'll
-          have the support of Reece when buying, installing and servicing your
-          Kaden.
+          KFCK adheres to the policy of prioritizing quality and customer
+          supremacy, and strictly follows the ISO9001 quality management system
+          for design, development, production, and installation.
         </p>
-        <WebButton btnStyle="dark" onClick={() => console.log("clicked")}>
+        <WebButton btnStyle="dark" onClick={handleProductClick}>
           Explore the range
         </WebButton>
       </Container>
