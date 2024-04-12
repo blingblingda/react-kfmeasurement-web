@@ -24,7 +24,7 @@ const Banner = () => {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100"
+              className="d-block"
               style={{ width: "100rem", height: "30rem" }}
               src={banner_2}
               alt="Second slide"
