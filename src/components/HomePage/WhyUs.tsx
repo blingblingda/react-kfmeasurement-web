@@ -24,12 +24,12 @@ const WhyUs = () => {
         }}
       >
         <div className="container-fluid py-5 px-5 d-flex flex-column align-items-start justify-content-center">
-          <h1 className="display-6 fw-bold text-white">
+          <h1 className="display-6 fw-bold text-white pb-5 pb-md-0">
             Measurement and Control
             <br />
             Instruments made for China
           </h1>
-          <p className="col-md-7 fs-5 text-white py-4">
+          <p className="col-md-10 d-none d-md-block fs-5 text-white py-4">
             Kaifeng Measurement & Control Technology Co., Ltd. was founded in
             1992, specializing in the research and development, production, and
             project design and construction of new products in nuclear
@@ -42,7 +42,7 @@ const WhyUs = () => {
           </WebButton>
         </div>
       </Container>
-      <Container className="my-5 text-dark-green text-center">
+      <Container className="mt-5 text-dark-green text-center">
         <h3 className="mb-4">
           Leading industry trends, continuously innovating products and services
         </h3>
