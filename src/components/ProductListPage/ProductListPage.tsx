@@ -19,8 +19,10 @@ const ProductListPage = () => {
   const category = location.state.category;
 
   useEffect(() => {
-    if (category) {
+    if (category && category !== "") {
       setQueryKeywords([category]);
+    } else {
+      setQueryKeywords([]);
     }
   }, [category]);
 
