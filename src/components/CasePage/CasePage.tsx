@@ -30,7 +30,7 @@ const CasePage = () => {
     } else {
       setContent("Case not found. Please try a different one.");
     }
-  }, []);
+  }, [caseItem]);
 
   const handleHomeClick: () => void = () => {
     navigate("/");
