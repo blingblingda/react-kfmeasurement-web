@@ -14,7 +14,10 @@ const SliderCard = ({ slide }: SliderCardProps) => {
         target="_blank"
         rel="noreferrer"
       >
-        <Card.Img src={slide.imgSrc} />
+        <Card.Img
+          src={slide.imgSrc}
+          style={{ width: "20rem", height: "15rem" }}
+        />
         <Card.Body>
           <Card.Text>{slide.name}</Card.Text>
         </Card.Body>

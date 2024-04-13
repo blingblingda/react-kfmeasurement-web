@@ -1,0 +1,31 @@
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
+
+  .card {
+    margin: 0 0.5em;
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+  .card {
+    margin: 0 7rem;
+  }
+}
+
+.image-wrapper {
+  height: 22vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}

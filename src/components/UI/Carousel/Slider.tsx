@@ -13,7 +13,7 @@ const Slider = () => {
   }
 
   return (
-    <div className="light-sec-space">
+    <div className="light-sec-space" style={{ height: "20rem" }}>
       <h2 className="text-dark-green text-center">Products Center</h2>
       <Carousel
         data-bs-theme="light"
