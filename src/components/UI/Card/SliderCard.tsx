@@ -18,7 +18,7 @@ const SliderCard = ({ slide }: SliderCardProps) => {
           src={slide.imgSrc}
           style={{ width: "20rem", height: "15rem" }}
         />
-        <Card.Body>
+        <Card.Body style={{ height: "4rem" }}>
           <Card.Text>{slide.name}</Card.Text>
         </Card.Body>
       </a>
