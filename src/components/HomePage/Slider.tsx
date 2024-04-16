@@ -1,8 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
-import SliderCard from "../Card/SliderCard";
-import Items from "../ItemList/itemList";
+import SliderCard from "../UI/Card/SliderCard";
+import Items from "../UI/ItemList/itemList";
 import { Stack } from "react-bootstrap";
-import { ProductFull } from "../../../models/product";
+import { ProductFull } from "../../models/product";
 import "./Slider.css";
 
 const Slider = () => {
