@@ -82,13 +82,17 @@ const ProductListPage = () => {
             className="d-inline-block w-50 text-grey "
             style={{ lineHeight: "1.75" }}
           >
-            Engineered for Australia's extreme summers & winters. Heat or cool
-            your whole home or a single room with our range of climate
-            solutions. Smart choice cooling. Leading warranties. Easy
-            installation. Leading health features. Made to last. Types: split
-            system air conditioning, multi air conditioning, ducted air
-            conditioning, cassette air conditioning, window air conditioning,
-            gas ducted heating, evaporative cooling
+            KFCK adheres to the principles of prioritizing quality and
+            customer-first, and strictly follows the ISO9001 quality management
+            system for design, development, production, and installation. Every
+            process, from component screening upon arrival to product aging
+            before shipment, is meticulously refined. Professional talent,
+            advanced equipment, and scientific management ensure the high
+            quality of Kaifeng Measurement and Control Company's products.
+            Kaifeng Measurement and Control Technology Co., Ltd. will continue
+            to provide customers with high-quality products and services, guided
+            by the business philosophy of "customer-first, integrity foremost,
+            technology leadership, and quality for success.
           </small>
         </Container>
       </main>
