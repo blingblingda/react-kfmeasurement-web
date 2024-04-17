@@ -45,7 +45,9 @@ const CasePage = () => {
             <li className="path-text" onClick={handleHomeClick}>
               Home
             </li>
-            <li className="li-before text-dark-green">{caseName}</li>
+            <li className="li-before text-dark-green">
+              {caseItem?.description}
+            </li>
           </Col>
         </Container>
         <Container className="px-4">

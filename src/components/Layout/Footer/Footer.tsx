@@ -1,97 +1,112 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import "./Footer.scss";
 import { ArrowUp } from "react-bootstrap-icons";
 import MyButton from "../../UI/Button/WebButton";
+import HeaderProductsList from "../../UI/ItemList/headerProductList";
+import { HeaderProduct } from "../../../models/product";
+import casesList from "../../UI/ItemList/caseList";
 
 const Footer = () => {
+  const products: HeaderProduct[] = HeaderProductsList;
+  const cases: HeaderProduct[] = casesList;
+
   const navigate = useNavigate();
 
   const handleContact = () => {
     navigate("/contact-us");
   };
+  const handleHomeClick: () => void = () => {
+    navigate("/");
+  };
+
+  const handleProductRedirectClick = (path: string, category: string) => {
+    if (typeof path === "string") {
+      navigate(path, { state: { category } });
+    } else {
+      console.warn("Attempted to navigate without a valid path");
+    }
+  };
+
+  const handleCaseRedirectClick = (path: string) => {
+    if (typeof path === "string") {
+      navigate(path);
+    } else {
+      console.warn("Attempted to navigate without a valid path");
+    }
+  };
 
   return (
     <footer className="footer text-white">
-      <div className="footer-top pt-5">
+      <div className="bg-dark-green pt-5 pb-3">
         <Container>
           <Row>
-            <Col md={3}>
-              <h5>KFCK</h5>
+            <Col md={2}>
+              <h5 onClick={handleHomeClick} className="pointer">
+                KFCK
+              </h5>
             </Col>
             <Col md={3}>
-              <h5>Products</h5>
+              <h5 className="pb-2">Products</h5>
               <ul className="list-unstyled">
-                <li>
-                  <a href="/Product1" className="link-white">
-                    Surface Density Meter
-                  </a>
-                </li>
-                <li>
-                  <a href="/Product2" className="link-white">
-                    Mining Instrumentation
-                  </a>
-                </li>
-                <li>
-                  <a href="/Product3" className="link-white">
-                    Power Supply System
-                  </a>
-                </li>
-                <li>
-                  <a href="/Product4" className="link-white">
-                    Intelligent Products
-                  </a>
-                </li>
+                {products.map((product) => (
+                  <li
+                    className="pb-2 pointer"
+                    onClick={() =>
+                      handleProductRedirectClick(product.path, product.category)
+                    }
+                  >
+                    {product.description}
+                  </li>
+                ))}
               </ul>
             </Col>
             <Col md={3}>
-              <h5>Cases</h5>
+              <h5 className="pb-2">Cases</h5>
               <ul className="list-unstyled">
-                <li>
-                  <a href="/Case1" className="link-white">
-                    GuangWang Pty Ltd
-                  </a>
+                {cases.map((product) => (
+                  <li
+                    className="pb-2 pointer"
+                    onClick={() => handleCaseRedirectClick(product.path)}
+                  >
+                    {product.description}
+                  </li>
+                ))}
+              </ul>
+            </Col>
+            <Col md={2}>
+              <h5 className="pb-2">Company</h5>
+              <ul className="list-unstyled">
+                <li
+                  className="pb-2 pointer"
+                  onClick={() => navigate("/why-us")}
+                >
+                  Why KFCK
                 </li>
-                <li>
-                  <a href="/Case2" className="link-white">
-                    Jizhong Energy
-                  </a>
-                </li>
-                <li>
-                  <a href="/Case3" className="link-white">
-                    Huaibei Mining
-                  </a>
-                </li>
-                <li>
-                  <a href="/Case4" className="link-white">
-                    Yan Energy Group
-                  </a>
+                <li
+                  className="pb-2 pointer"
+                  onClick={() => navigate("/contact-us")}
+                >
+                  Contact Us
                 </li>
               </ul>
             </Col>
-            <Col md={3}>
+            <Col md={2}>
               <a
                 href="#top"
-                className="link-white clearfix mb-3 d-block"
-                id="scroll-top"
+                className="link-white clearfix mb-3 d-block text-decoration-underline"
               >
                 <ArrowUp /> Back to Top{" "}
               </a>
-              <MyButton btnStyle="light" onClick={handleContact}>
-                Contact Us
-              </MyButton>
             </Col>
           </Row>
         </Container>
       </div>
-      <div className="footer-bottom py-1">
+      <div className="bg-light-green py-1">
         <Container className="footer-bottom-bg">
           <Row>
             <Col md={6} xs={6} className="pt-2">
-              <p className="text-dark-green text-decoration-none">
-                Terms & Conditions
-              </p>
+              <p className="text-dark-green">Terms & Conditions</p>
             </Col>
 
             <Col md={6} xs={6}>
