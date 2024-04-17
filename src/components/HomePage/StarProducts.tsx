@@ -15,7 +15,7 @@ const StarProducts = () => {
         </Row>
         <Row>
           {starProducts.map((product) => (
-            <Col key={product.id} sm={6} md={3} lg={3}>
+            <Col key={product.id} sm={6} lg={3}>
               <StarCard product={product} />
             </Col>
           ))}

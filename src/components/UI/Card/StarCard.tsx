@@ -21,8 +21,12 @@ const StarCard = ({ product }: StarCardProps) => {
       className="d-flex flex-column justify-content-between align-items-center star-card-height"
       style={{ height: "29rem" }}
     >
-      <Card.Title>{product.name}</Card.Title>
-      <Card.Img src={product.imgSrc} className="mt-3" />
+      <Card.Title className="text-center">{product.name}</Card.Title>
+      <Card.Img
+        src={product.imgSrc}
+        className="mt-4"
+        style={{ width: "20rem" }}
+      />
       <Card.Body className="d-flex flex-column justify-content-between align-items-center text-center">
         <Card.Text>{product.description}</Card.Text>
         <WebButton btnStyle="dark" onClick={handleProductsClick}>

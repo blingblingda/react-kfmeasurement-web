@@ -20,31 +20,31 @@ To meet the demand for rapid and online ash content measurement, and to achieve 
 
    The natural radiation ash content measurement system consists of a high-performance gamma ray detector, environmental radiation shielding, spectrometer, high-precision online load weighing device, and other measurement detection devices; as well as a mainframe computer, printer, and other display and processing equipment.
 
-1.3 **Functions and Technical Features**
+   1.3 **Functions and Technical Features**
 
-1.3.1 **Functions**
+   1.3.1 **Functions**
 
-(1) Real-time ash content measurement. It can provide 1-minute, 10-minute, hourly, and cumulative ash content measurements.
+   (1) Real-time ash content measurement. It can provide 1-minute, 10-minute, hourly, and cumulative ash content measurements.
 
-(2) Accumulated quantity measurement. Achieves precise online measurement of cumulative coal flow.
+   (2) Accumulated quantity measurement. Achieves precise online measurement of cumulative coal flow.
 
-(3) Reporting function. Provides statistical reports for 1-minute, 10-minute, and hourly ash content, available for interval inquiries; provides shift production and daily production reports statistics, available for interval queries.
+   (3) Reporting function. Provides statistical reports for 1-minute, 10-minute, and hourly ash content, available for interval inquiries; provides shift production and daily production reports statistics, available for interval queries.
 
-(4) Network functionality. It can connect to a local area network (LAN) to achieve network data sharing.
+   (4) Network functionality. It can connect to a local area network (LAN) to achieve network data sharing.
 
-(5) Pre-set 8 types of coal quality characteristic spectral line parameters.
+   (5) Pre-set 8 types of coal quality characteristic spectral line parameters.
 
-1.3.2 **Features**
+   1.3.2 **Features**
 
-(1) No radioactive source. There are no radiation safety hazards, making it safer, simplifying on-site management, and eliminating any management related to radioactive sources, resulting in lower operating costs.
+   (1) No radioactive source. There are no radiation safety hazards, making it safer, simplifying on-site management, and eliminating any management related to radioactive sources, resulting in lower operating costs.
 
-(2) Strong real-time capability. It can measure the ash content as short as 10 seconds, which is far superior in real-time capability compared to other ash analyzers.
+   (2) Strong real-time capability. It can measure the ash content as short as 10 seconds, which is far superior in real-time capability compared to other ash analyzers.
 
-(3) Strong practicality. There are no restrictions on the upper limit of ash content or coal flow rate (surface density), making it suitable for measuring coal ash content on ordinary conveyor belts and steel cord conveyor belts.
+   (3) Strong practicality. There are no restrictions on the upper limit of ash content or coal flow rate (surface density), making it suitable for measuring coal ash content on ordinary conveyor belts and steel cord conveyor belts.
 
-(4) Easy installation. Modular design makes installation simple and easy.
+   (4) Easy installation. Modular design makes installation simple and easy.
 
-(5) Full-range detection. It can detect the ash content signal and surface density sampling of the entire coal flow cross-section, making the ash content data more accurate and representative.
+   (5) Full-range detection. It can detect the ash content signal and surface density sampling of the entire coal flow cross-section, making the ash content data more accurate and representative.
 
 2. **Application Effect**
 
@@ -64,32 +64,32 @@ To meet the demand for rapid and online ash content measurement, and to achieve 
 
 3. **Key Technologies and Innovations**
 
-    Natural gamma-ray ash analyzers do not use radioactive sources, ensuring safety and environmental protection. The ash analyzer has established an effective mathematical model and can perform static calibration with belt stoppage safely and reliably.
+   Natural gamma-ray ash analyzers do not use radioactive sources, ensuring safety and environmental protection. The ash analyzer has established an effective mathematical model and can perform static calibration with belt stoppage safely and reliably.
 
 4. **Benefit Evaluation**
 
-   **(1)Economic Benefits:** After installing the non-radioactive ash analyzer, the labor intensity of workers has been reduced. Initially, the number of workers in the road transport team was reduced from 8 to 6 people. Calculated at an average monthly salary of 5000 yuan per person, the annual savings in wages for each person amount to 60,000 yuan, resulting in a total saving of 120,000 yuan for two people.
+   (1) **Economic Benefits:** After installing the non-radioactive ash analyzer, the labor intensity of workers has been reduced. Initially, the number of workers in the road transport team was reduced from 8 to 6 people. Calculated at an average monthly salary of 5000 yuan per person, the annual savings in wages for each person amount to 60,000 yuan, resulting in a total saving of 120,000 yuan for two people.
 
-   **(2)Social Benefits:** The non-radioactive ash analyzer is a green, safe, environmentally friendly, and radiation-free product. It can provide timely and rapid guidance for coal washing production, adjust coal washing production parameters, and improve the clean coal recovery rate. It has good promotional value.
+   (2) **Social Benefits:** The non-radioactive ash analyzer is a green, safe, environmentally friendly, and radiation-free product. It can provide timely and rapid guidance for coal washing production, adjust coal washing production parameters, and improve the clean coal recovery rate. It has good promotional value.
 
 5. **Problems in Operation and Areas Needing Improvement**
 
-  (1) Problem of switching coal types: The plant receives coal from three different mines, and often encounters situations where coal from different mines is transported to the bin at different times, shifts, or mine sources. If the operator forgets to switch the coal type, it will lead to a significant difference in ash content detected by the ash analyzer. Therefore, it is recommended to add a coal type switch reminder signal to avoid data errors caused by forgetting to switch coal types.
+   (1) Problem of switching coal types: The plant receives coal from three different mines, and often encounters situations where coal from different mines is transported to the bin at different times, shifts, or mine sources. If the operator forgets to switch the coal type, it will lead to a significant difference in ash content detected by the ash analyzer. Therefore, it is recommended to add a coal type switch reminder signal to avoid data errors caused by forgetting to switch coal types.
 
-  (2) Data loss due to power outage: If the ash analyzer experiences an unexpected power outage, data will be lost, causing difficulties in guiding production and settlement between enterprises and mines. It is suggested to add memory function components to prevent data loss due to power outages.
+   (2) Data loss due to power outage: If the ash analyzer experiences an unexpected power outage, data will be lost, causing difficulties in guiding production and settlement between enterprises and mines. It is suggested to add memory function components to prevent data loss due to power outages.
 
-  (3) Impact of changes in mine coal seam blending ratio: In the process, when coal from multiple working faces in the mine is mixed and sent to the plant for ash analysis, there is a large discrepancy between the ash content detected by the ash analyzer and the manual sampling and analysis. It is necessary for the mine to fix the blending ratio of different coal seams. Due to the significant difference in the radioactive element content of coal from different working faces, attention must be paid to the blending ratio of the mine. For example, when the mine changes to a more distant working face or the blending ratio of the working face changes, it is necessary to conduct manual material composition analysis of the raw coal and recalibrate the ash analyzer in a timely manner.
+   (3) Impact of changes in mine coal seam blending ratio: In the process, when coal from multiple working faces in the mine is mixed and sent to the plant for ash analysis, there is a large discrepancy between the ash content detected by the ash analyzer and the manual sampling and analysis. It is necessary for the mine to fix the blending ratio of different coal seams. Due to the significant difference in the radioactive element content of coal from different working faces, attention must be paid to the blending ratio of the mine. For example, when the mine changes to a more distant working face or the blending ratio of the working face changes, it is necessary to conduct manual material composition analysis of the raw coal and recalibrate the ash analyzer in a timely manner.
 
-  (4) Problem of no data display due to multiple router connections: Initially, the plant's fiber optic connection to the upper computer and display was far away, and there were three routers in between, which often led to no data display. Later, after moving the upper computer and display from the operation room to the fiber optic access point, the disconnection problem was effectively avoided, ensuring the accuracy, timeliness, and completeness of data detection.
+   (4) Problem of no data display due to multiple router connections: Initially, the plant's fiber optic connection to the upper computer and display was far away, and there were three routers in between, which often led to no data display. Later, after moving the upper computer and display from the operation room to the fiber optic access point, the disconnection problem was effectively avoided, ensuring the accuracy, timeliness, and completeness of data detection.
 
-  (5) Increase in fluctuation range of detection values: When the thickness of pollutants such as coal dust on the outer shell of the online ash analyzer detector reaches 1 mm or more, it will affect the detection performance. Therefore, it is necessary to regularly clean pollutants and coal dust based on environmental conditions. Initial cleaning is recommended once a week, and in good conditions, cleaning once a month is also acceptable. However, regular checks must be carried out, and zeroing of the ash analyzer scale must be done. Initially, daily zeroing checks are required.
+   (5) Increase in fluctuation range of detection values: When the thickness of pollutants such as coal dust on the outer shell of the online ash analyzer detector reaches 1 mm or more, it will affect the detection performance. Therefore, it is necessary to regularly clean pollutants and coal dust based on environmental conditions. Initial cleaning is recommended once a week, and in good conditions, cleaning once a month is also acceptable. However, regular checks must be carried out, and zeroing of the ash analyzer scale must be done. Initially, daily zeroing checks are required.
 
-  (6) Impact of mixed coal on measurement accuracy: Once the incoming raw coal is mixed in the coal bin, it leads to inaccurate measurement values. It is necessary to clean the coal belt of the receiving coal pit each time before unloading coal from another mine to avoid cross-contamination between different mine sources.
+   (6) Impact of mixed coal on measurement accuracy: Once the incoming raw coal is mixed in the coal bin, it leads to inaccurate measurement values. It is necessary to clean the coal belt of the receiving coal pit each time before unloading coal from another mine to avoid cross-contamination between different mine sources.
 
-  (7) Impact of inaccurate belt scale on ash content detection values: It is necessary to regularly check whether the screws of the belt scale frame are loose, whether the weighing roller is dirty or not in contact with the belt. Lubricate the weighing rollers regularly and check if the belt is misaligned. Regular cross-checks are required. If significant deviations in data are found, adjust the relevant parameters promptly.
+   (7) Impact of inaccurate belt scale on ash content detection values: It is necessary to regularly check whether the screws of the belt scale frame are loose, whether the weighing roller is dirty or not in contact with the belt. Lubricate the weighing rollers regularly and check if the belt is misaligned. Regular cross-checks are required. If significant deviations in data are found, adjust the relevant parameters promptly.
 
-  (8) Impact of changes in raw coal particle size on detection values: When there are significant changes in the particle size of raw coal, there will be a large discrepancy between the detection values of the ash analyzer and the actual values.
+   (8) Impact of changes in raw coal particle size on detection values: When there are significant changes in the particle size of raw coal, there will be a large discrepancy between the detection values of the ash analyzer and the actual values.
 
-  (9) Impact of uneven coal loading on detection values: When the coal loading on the belt fluctuates significantly, causing intermittent coal flow or uneven coal thickness on the belt, it affects the accuracy of ash measurement, resulting in a large deviation between detection values and actual values. Therefore, the coal feeding machine on the belt should be adjusted to ensure a stable coal loading and avoid interference from this factor.
+   (9) Impact of uneven coal loading on detection values: When the coal loading on the belt fluctuates significantly, causing intermittent coal flow or uneven coal thickness on the belt, it affects the accuracy of ash measurement, resulting in a large deviation between detection values and actual values. Therefore, the coal feeding machine on the belt should be adjusted to ensure a stable coal loading and avoid interference from this factor.
 
-  (10) Impact of lack of operation records after switching coal types on detection values: If the operator has switched coal types but there are no operation records, the ash content value will be the ash content value of mixed coal types, resulting in an error in ash content detection values.
+   (10) Impact of lack of operation records after switching coal types on detection values: If the operator has switched coal types but there are no operation records, the ash content value will be the ash content value of mixed coal types, resulting in an error in ash content detection values.

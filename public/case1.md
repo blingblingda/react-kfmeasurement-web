@@ -44,28 +44,28 @@ The Daihe Dam Coal Preparation Plant is located in Wangcang County, Sichuan Prov
 
    The NGAM-2008 natural radioactive ash analyzer can work well, and the daily management and maintenance by the users are crucial. The Daihe Dam Coal Preparation Plant follows the requirements of the ash analyzer manufacturer and combines its own characteristics to achieve the following points:
 
-   (1) Designate coal quality personnel with computer and mechanical knowledge as the managers of the ash analyzer.
+   4.1 Designate coal quality personnel with computer and mechanical knowledge as the managers of the ash analyzer.
 
-   (2) Arrange for managers to fully participate in equipment installation, commissioning, comparison, training, etc., to become familiar with the principles and performance of the equipment, be able to troubleshoot simple faults independently, and have the ability to calibrate the instrument independently.
+   4.2 Arrange for managers to fully participate in equipment installation, commissioning, comparison, training, etc., to become familiar with the principles and performance of the equipment, be able to troubleshoot simple faults independently, and have the ability to calibrate the instrument independently.
 
-   (3) Managers should adjust operation curves promptly according to changes in the types of coal entering the plant. Regularly sample the production coal flow, compare it with measurement values, and keep good records and accumulation of data to make minor adjustments to parameters for systematic biases.
+   4.3 Managers should adjust operation curves promptly according to changes in the types of coal entering the plant. Regularly sample the production coal flow, compare it with measurement values, and keep good records and accumulation of data to make minor adjustments to parameters for systematic biases.
 
-   (4) The Mining Bureau of the group, the coal preparation plant, and the coal mine set a three-party password according to settlement characteristics to ensure the fair operation of the instrument and prevent human cheating behavior.
+   4.4 The Mining Bureau of the group, the coal preparation plant, and the coal mine set a three-party password according to settlement characteristics to ensure the fair operation of the instrument and prevent human cheating behavior.
 
-   (5) Maintenance personnel should clean the ash from the natural radioactive detector promptly during each shift, perform zero-point operations on the coal flow load detection device regularly, inspect the contact between rollers and belt conveyors in the weighing area to ensure no suspension, jamming, or overload occurs.
+   4.5 Maintenance personnel should clean the ash from the natural radioactive detector promptly during each shift, perform zero-point operations on the coal flow load detection device regularly, inspect the contact between rollers and belt conveyors in the weighing area to ensure no suspension, jamming, or overload occurs.
 
 5. **Conclusion**
 
    After more than 2 years of operation of the NGAM-2008 natural radioactive ash analyzer at the Daihe Dam Coal Preparation Plant, the following functional characteristics have been summarized:
 
-   (1)**No Radioactive Source:** The analyzer does not use a radioactive source, eliminating radiation safety hazards. This simplifies equipment management, reduces operational costs, enhances safety, and promotes green environmental protection.
+   5.1 **No Radioactive Source:** The analyzer does not use a radioactive source, eliminating radiation safety hazards. This simplifies equipment management, reduces operational costs, enhances safety, and promotes green environmental protection.
 
-   (2)**High Measurement Accuracy:** Through comparison, the measurement error within 10 minutes is superior to industry standards. It ensures quality control of incoming raw coal, effectively replaces manual sampling, and achieves goals of improving quality, reducing personnel, and increasing efficiency.
+   5.2 **High Measurement Accuracy:** Through comparison, the measurement error within 10 minutes is superior to industry standards. It ensures quality control of incoming raw coal, effectively replaces manual sampling, and achieves goals of improving quality, reducing personnel, and increasing efficiency.
 
-   (3) **Easy Installation:** The analyzer features modular design, making installation simple and feasible.
+   5.3 **Easy Installation:** The analyzer features modular design, making installation simple and feasible.
 
-   (4) **Low Calibration Work:** With sampling results, parameter adjustments are minor.
+   5.4 **Low Calibration Work:** With sampling results, parameter adjustments are minor.
 
-   (5) **Full-Range Detection:** Unique structural design allows for full cross-sectional ash content detection, resulting in more accurate and representative measurement results.
+   5.5 **Full-Range Detection:** Unique structural design allows for full cross-sectional ash content detection, resulting in more accurate and representative measurement results.
 
-   (6) **Integr ation of Ash Content and Production:** The production measurement accuracy is better than 0.25 grade, saving on the purchase cost of electronic conveyor scales.
+   5.6 **Integration of Ash Content and Production:** The production measurement accuracy is better than 0.25 grade, saving on the purchase cost of electronic conveyor scales.

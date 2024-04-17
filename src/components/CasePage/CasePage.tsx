@@ -39,16 +39,18 @@ const CasePage = () => {
   return (
     <>
       <Header />
-      <main className="bg-light-grey">
+      <main className="bg-light-grey pb-5">
         <Container className="px-0">
           <Col className="py-4 px-4 list-unstyled d-flex justify-content-start">
             <li className="path-text" onClick={handleHomeClick}>
               Home
             </li>
-            <li className="li-before text-dark-green">{caseName}</li>
+            <li className="li-before text-dark-green">
+              {caseItem?.description}
+            </li>
           </Col>
         </Container>
-        <Container>
+        <Container className="px-4">
           <ReactMarkdown children={content} />
         </Container>
       </main>
