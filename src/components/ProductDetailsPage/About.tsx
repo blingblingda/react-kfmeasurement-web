@@ -1,5 +1,5 @@
 import { Container, Stack } from "react-bootstrap";
-import MainSection from "./AboutMainSection";
+import AboutMainSection from "./AboutMainSection";
 
 interface AboutProps {
   aboutSrc: [number, number];
@@ -9,7 +9,7 @@ const About = ({ aboutSrc }: AboutProps) => {
   return (
     <>
       <Stack direction="vertical" gap={1}>
-        <MainSection aboutSrc={aboutSrc} />
+        <AboutMainSection aboutSrc={aboutSrc} />
         <Container fluid className="text-center text-dark-green py-3">
           <h3 className="mb-5">What Our Clients Say</h3>
           <p>
