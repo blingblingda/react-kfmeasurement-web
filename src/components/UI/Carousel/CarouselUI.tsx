@@ -1,40 +1,77 @@
 import { Carousel, Stack } from "react-bootstrap";
 import Img from "../../../models/img";
+import { ProductFull } from "../../../models/product";
 import Image from "react-bootstrap/Image";
+import SliderCard from "../Card/SliderCard";
+
+type Item = Img | ProductFull;
 
 interface CarouseUIProps {
-  items: Img[];
+  items: Item[];
   title: string;
-  imgWidth: string;
-  imgHeight: string;
+  groupSize: number;
+  sizeControlClass: string;
+  imgWidth?: string;
+  imgHeight?: string;
 }
 
-const chunkArray = (array: Img[], size: number) => {
-  const chunkedArr = [];
-  for (let i = 0; i < array.length; i += size) {
-    chunkedArr.push(array.slice(i, i + size));
+const CarouselUI = ({
+  items,
+  title,
+  groupSize,
+  sizeControlClass,
+  imgWidth,
+  imgHeight,
+}: CarouseUIProps) => {
+  const groupItems: Item[][] = [];
+  for (let i = 0; i < items.length; i += groupSize) {
+    groupItems.push(items.slice(i, i + groupSize));
   }
-  return chunkedArr;
-};
 
-const CarouselUI = ({ items, title, imgWidth, imgHeight }: CarouseUIProps) => {
-  const groupItems: Img[][] = chunkArray(items, 5);
+  const defaultItemClasses = ["light-sec-space", "slider-height"];
+  const itemClasses = [...defaultItemClasses, sizeControlClass].join(" ");
 
-  return (
-    <div className="bg-light-grey">
-      <h2 className="text-center fs-2 text-dark-green pt-5">{title}</h2>
-      <div className="container-fluid">
-        <Carousel style={{ height: 400 }}>
-          {groupItems.map((group) => (
-            <Carousel.Item className="pt-5">
+  const isProductFull = (item: any): item is ProductFull => {
+    console.log(item);
+    return item.name !== undefined;
+  };
+
+  if (isProductFull(items[0])) {
+    return (
+      <div className={itemClasses}>
+        <h2 className="text-dark-green text-center mb-5">{title}</h2>
+        <Carousel className="text-center">
+          {groupItems.map((group, index) => (
+            <Carousel.Item key={index}>
               <Stack
                 direction="horizontal"
                 className="h-100 justify-content-center align-items-center"
-                gap={3}
+                gap={5}
               >
-                {group.map((Item) => (
+                {group.map((item) => (
+                  <SliderCard key={item.id} slide={item as ProductFull} />
+                ))}
+              </Stack>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
+    );
+  } else {
+    return (
+      <div className={itemClasses}>
+        <h2 className="text-dark-green text-center mb-5">{title}</h2>
+        <Carousel className="text-center">
+          {groupItems.map((group, index) => (
+            <Carousel.Item key={index}>
+              <Stack
+                direction="horizontal"
+                className="h-100 justify-content-center align-items-center"
+                gap={5}
+              >
+                {group.map((item) => (
                   <Image
-                    src={Item.imgSrc}
+                    src={item.imgSrc}
                     style={{ width: imgWidth, height: imgHeight }}
                   />
                 ))}
@@ -43,8 +80,8 @@ const CarouselUI = ({ items, title, imgWidth, imgHeight }: CarouseUIProps) => {
           ))}
         </Carousel>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default CarouselUI;
