@@ -1,5 +1,5 @@
 import { Award, BagHeart, ShieldCheck } from "react-bootstrap-icons";
-import Reason from "../UI/Symbol/Feature";
+import Feature from "../UI/Symble/Feature";
 import { Col, Container, Row } from "react-bootstrap";
 
 const features = [
@@ -34,7 +34,7 @@ const ProductFeature = () => {
         <Row className="justify-content-center px-5">
           {features.map((feature) => (
             <Col key={feature.id}>
-              <Reason feature={feature} />
+              <Feature feature={feature} />
             </Col>
           ))}
         </Row>

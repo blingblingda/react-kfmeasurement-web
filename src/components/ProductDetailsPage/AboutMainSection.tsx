@@ -1,11 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { AboutPictures } from "../UI/ItemList/productAboutList";
 
-interface MainSectionProps {
+interface AboutMainSectionProps {
   aboutSrc: [number, number];
 }
 
-const MainSection = ({ aboutSrc }: MainSectionProps) => {
+const AboutMainSection = ({ aboutSrc }: AboutMainSectionProps) => {
   return (
     <>
       <Container className="grey-sec-space bg-light-grey">
@@ -62,4 +62,4 @@ const MainSection = ({ aboutSrc }: MainSectionProps) => {
   );
 };
 
-export default MainSection;
+export default AboutMainSection;

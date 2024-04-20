@@ -10,6 +10,7 @@ const Feature = ({ feature }: FeatureProps) => {
       <div className="text-center ">
         {React.createElement(feature.icon, { size: "40px" })}
         <p className="mt-3">{feature.text}</p>
+        <p>{feature.description}</p>
       </div>
     </>
   );

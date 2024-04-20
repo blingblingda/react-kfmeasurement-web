@@ -1,6 +1,6 @@
 import { Lightbulb, Flag, Buildings } from "react-bootstrap-icons";
 import { Col, Container, Row } from "react-bootstrap";
-import Culture from "../UI/Symbol/Culture";
+import Feature from "../UI/Symble/Feature";
 
 const cultures = [
   {
@@ -42,7 +42,7 @@ const CompanyCulture = () => {
         <Row className="justify-content-md-center">
           {cultures.map((culture) => (
             <Col key={culture.id}>
-              <Culture culture={culture} />
+              <Feature feature={culture} />
             </Col>
           ))}
         </Row>

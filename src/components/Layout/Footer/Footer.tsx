@@ -2,7 +2,6 @@ import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowUp } from "react-bootstrap-icons";
-import MyButton from "../../UI/Button/WebButton";
 import HeaderProductsList from "../../UI/ItemList/headerProductList";
 import { HeaderProduct } from "../../../models/product";
 import casesList from "../../UI/ItemList/caseList";
@@ -13,9 +12,6 @@ const Footer = () => {
 
   const navigate = useNavigate();
 
-  const handleContact = () => {
-    navigate("/contact-us");
-  };
   const handleHomeClick: () => void = () => {
     navigate("/");
   };

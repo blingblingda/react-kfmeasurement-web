@@ -3,7 +3,7 @@ import Footer from "../Layout/Footer/Footer";
 import WhyBanner from "./WhyBanner";
 import WhyJourney from "./WhyJourney";
 import BrandStoryVideo from "./BrandStoryVideo";
-import CompanyCulture from "./CompanyCulture";
+import CompanyCulture from "./CultureFeature";
 import Strategy from "./Strategy";
 import CarouselUI from "../UI/Carousel/CarouselUI";
 // import Partnership from "./Partnership";

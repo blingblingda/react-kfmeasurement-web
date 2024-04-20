@@ -5,7 +5,7 @@ import Footer from "../Layout/Footer/Footer";
 import Slider from "./Slider";
 import Hero from "./Hero";
 import WhyUs from "./WhyUs";
-import BrandFeature from "./Feature";
+import BrandFeature from "./BrandFeature";
 
 const HomePage = () => {
   return (

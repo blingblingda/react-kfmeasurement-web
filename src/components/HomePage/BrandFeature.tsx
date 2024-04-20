@@ -6,7 +6,7 @@ import {
   ShieldCheck,
 } from "react-bootstrap-icons";
 import { Col, Container, Row } from "react-bootstrap";
-import Feature from "../UI/Symbol/Feature";
+import Feature from "../UI/Symble/Feature";
 
 const features = [
   {
