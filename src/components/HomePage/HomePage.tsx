@@ -2,7 +2,7 @@ import Header from "../Layout/Header/Header";
 import StarProducts from "./StarProducts";
 import Banner from "./Banner";
 import Footer from "../Layout/Footer/Footer";
-import Slider from "./Slider";
+import ProductCenter from "./ProductCenter";
 import Hero from "./Hero";
 import WhyUs from "./WhyUs";
 import BrandFeature from "./BrandFeature";
@@ -16,7 +16,7 @@ const HomePage = () => {
       <BrandFeature />
       <Banner />
       <WhyUs />
-      <Slider />
+      <ProductCenter />
       <Footer />
     </>
   );

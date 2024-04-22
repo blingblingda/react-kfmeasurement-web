@@ -3,6 +3,7 @@ import Img from "../../../models/img";
 import { ProductFull } from "../../../models/product";
 import Image from "react-bootstrap/Image";
 import SliderCard from "../Card/SliderCard";
+import "./CarouselUI.scss";
 
 type Item = Img | ProductFull;
 
