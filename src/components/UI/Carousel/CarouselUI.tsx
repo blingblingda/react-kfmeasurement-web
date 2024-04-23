@@ -1,7 +1,6 @@
-import { Carousel, Stack } from "react-bootstrap";
+import { Carousel, Stack, Image } from "react-bootstrap";
 import Img from "../../../models/img";
 import { ProductFull } from "../../../models/product";
-import Image from "react-bootstrap/Image";
 import SliderCard from "../Card/SliderCard";
 import "./CarouselUI.scss";
 
@@ -29,19 +28,22 @@ const CarouselUI = ({
     groupItems.push(items.slice(i, i + groupSize));
   }
 
-  const defaultItemClasses = ["light-sec-space", "slider-height"];
+  const defaultItemClasses = ["light-sec-space", "carousel-height"];
   const itemClasses = [...defaultItemClasses, sizeControlClass].join(" ");
 
   const isProductFull = (item: any): item is ProductFull => {
-    console.log(item);
     return item.name !== undefined;
+  };
+
+  const isImg = (item: any): item is Img => {
+    return item.alt !== undefined;
   };
 
   if (isProductFull(items[0])) {
     return (
       <div className={itemClasses}>
         <h2 className="text-dark-green text-center mb-5">{title}</h2>
-        <Carousel className="text-center">
+        <Carousel className="text-center" indicators={false}>
           {groupItems.map((group, index) => (
             <Carousel.Item key={index}>
               <Stack
@@ -58,11 +60,11 @@ const CarouselUI = ({
         </Carousel>
       </div>
     );
-  } else {
+  } else if (isImg(items[0])) {
     return (
       <div className={itemClasses}>
         <h2 className="text-dark-green text-center mb-5">{title}</h2>
-        <Carousel className="text-center">
+        <Carousel className="text-center" indicators={false}>
           {groupItems.map((group, index) => (
             <Carousel.Item key={index}>
               <Stack
@@ -82,6 +84,8 @@ const CarouselUI = ({
         </Carousel>
       </div>
     );
+  } else {
+    return <div>Error!</div>;
   }
 };
 

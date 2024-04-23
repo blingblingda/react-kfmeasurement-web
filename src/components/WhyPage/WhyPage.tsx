@@ -5,36 +5,24 @@ import WhyJourney from "./WhyJourney";
 import BrandStoryVideo from "./BrandStoryVideo";
 import CompanyCulture from "./CultureFeature";
 import Strategy from "./Strategy";
-import CarouselUI from "../UI/Carousel/CarouselUI";
-// import Partnership from "./Partnership";
-// import CertificateCarousel from "./CertificateCarousel";
-import Img from "../../models/img";
-import items from "../UI/ItemList/certificateList";
+import Partnership from "./Partnership";
+import CertificateCarousel from "./CertificateCarousel";
 
 const WhyPage = () => {
   return (
-    <>
+    <div className="bg-light-grey">
       <Header />
-      <main className="bg-light-grey">
+      <main>
         <WhyBanner />
         <BrandStoryVideo />
         <CompanyCulture />
         <WhyJourney />
-        {/* <CertificateCarousel /> */}
+        <CertificateCarousel />
         <Strategy />
-        {/* 
-        <Partnership /> */}
+        <Partnership />
       </main>
       <Footer />
-      <CarouselUI
-        items={items}
-        title={"test"}
-        groupSize={2}
-        sizeControlClass={"bg-black"}
-        imgWidth={"10rem"}
-        imgHeight={"20rem"}
-      />
-    </>
+    </div>
   );
 };
 
