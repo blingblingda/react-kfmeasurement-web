@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <Navbar id="top" expand="lg" className="bg-body-transparent custom-navbar">
+    <Navbar id="top" expand="lg" className="bg-white custom-navbar">
       <Container>
         <Navbar.Brand
           className="text-dark-green logo-style pointer"

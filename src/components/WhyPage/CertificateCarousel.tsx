@@ -1,23 +1,35 @@
-// import certificateList from "../UI/ItemList/certificateList";
-// import CarouselUI from "../UI/Carousel/CarouselUI";
-
-// const CertificateCarousel = () => {
-//   return (
-//     <CarouselUI
-//       items={certificateList}
-//       title="Certificates"
-//       imgWidth="10rem"
-//       imgHeight="15rem"
-//     />
-//   );
-// };
-
-// export default CertificateCarousel;
-
-import React from "react";
+import certificates from "../UI/ItemList/certificateList";
+import CarouselUI from "../UI/Carousel/CarouselUI";
 
 const CertificateCarousel = () => {
-  return <div>CertificateCarousel</div>;
+  return (
+    <>
+      <CarouselUI
+        items={certificates}
+        title="Certificates"
+        groupSize={1}
+        sizeControlClass={"single-slider"}
+        imgWidth="13rem"
+        imgHeight="20rem"
+      />
+      <CarouselUI
+        items={certificates}
+        title="Certificates"
+        groupSize={3}
+        sizeControlClass={"double-sliders"}
+        imgWidth="13rem"
+        imgHeight="20rem"
+      />
+      <CarouselUI
+        items={certificates}
+        title="Certificates"
+        groupSize={5}
+        sizeControlClass={"triple-sliders"}
+        imgWidth="13rem"
+        imgHeight="20rem"
+      />
+    </>
+  );
 };
 
 export default CertificateCarousel;

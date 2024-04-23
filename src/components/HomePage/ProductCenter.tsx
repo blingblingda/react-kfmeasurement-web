@@ -1,23 +1,23 @@
 import CarouselUI from "../UI/Carousel/CarouselUI";
-import Items from "../UI/ItemList/itemList";
+import itemList from "../UI/ItemList/itemList";
 
 const ProductCenter = () => {
   return (
     <>
       <CarouselUI
-        items={Items}
+        items={itemList}
         title={"ProductCenter"}
         groupSize={1}
         sizeControlClass={"single-slider"}
       />
       <CarouselUI
-        items={Items}
+        items={itemList}
         title={"ProductCenter"}
         groupSize={2}
         sizeControlClass={"double-sliders"}
       />
       <CarouselUI
-        items={Items}
+        items={itemList}
         title={"ProductCenter"}
         groupSize={3}
         sizeControlClass={"triple-sliders"}
