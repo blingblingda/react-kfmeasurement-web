@@ -1,9 +1,9 @@
-import About_pic1 from "../../../assets/About_pic1.jpeg";
-import About_pic2 from "../../../assets/About_pic2.jpeg";
-import About_pic3 from "../../../assets/About_pic3.jpg";
-import About_pic4 from "../../../assets/About_pic4.jpg";
-import About_pic5 from "../../../assets/About_pic5.jpg";
-import About_pic6 from "../../../assets/About_pic6.jpg";
+import About_pic1 from "../../../assets/aboutPics/About_pic1.jpeg";
+import About_pic2 from "../../../assets/aboutPics/About_pic2.jpeg";
+import About_pic3 from "../../../assets/aboutPics/About_pic3.jpg";
+import About_pic4 from "../../../assets/aboutPics/About_pic4.jpg";
+import About_pic5 from "../../../assets/aboutPics/About_pic5.jpg";
+import About_pic6 from "../../../assets/aboutPics/About_pic6.jpg";
 
 export const AboutPictures = [
   {

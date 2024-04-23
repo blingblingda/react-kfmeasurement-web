@@ -1,4 +1,3 @@
-import { Col, Container, Row } from "react-bootstrap";
 import { AboutPictures } from "../UI/ItemList/productAboutList";
 import PlateUI from "../UI/Plate/PlateUI";
 
@@ -15,11 +14,12 @@ const AboutMainSection = ({ aboutSrc }: AboutMainSectionProps) => {
 
   return (
     <>
-      {AboutPictureGroup.map((item) => (
+      {AboutPictureGroup.map((item, index) => (
         <PlateUI
           title={item.title}
           imgSrc={item.pic}
           description={item.description}
+          isReverse={index % 2 !== 0}
         />
       ))}
     </>
