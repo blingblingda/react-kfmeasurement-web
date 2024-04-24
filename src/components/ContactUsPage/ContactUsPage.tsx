@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../Layout/Header/Header";
 import Footer from "../Layout/Footer/Footer";
-import { Col, Container, Row, Form, Image, Button } from "react-bootstrap";
+import { Col, Container, Row, Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import contactUsImg from "./contactUsImg.png";
 // import ReCAPTCHA from "react-google-recaptcha";
@@ -100,25 +100,21 @@ const ContactUsPage = () => {
     navigate("/");
   };
 
-  // function onChange(value: any) {
-  //   console.log("Captcha value:", value);
-  // }
-
   return (
     <>
       <Header />
-      <Container className="p-0">
+      <Container>
         <Row>
-          <Col>
+          <Col lg={6}>
             <Row className="bg-white">
-              <Col className="py-4 list-unstyled d-flex justify-content-start">
+              <Col className="p-4 list-unstyled d-flex justify-content-start">
                 <li className="path-text" onClick={handleHomeClick}>
                   Home
                 </li>
                 <li className="li-before text-dark-green">Contact Us</li>
               </Col>
             </Row>
-            <Row className="bg-white mt-5">
+            <Row className="bg-white mt-3 px-3">
               <Col>
                 <h2 className="text-dark-green">Get in touch with KFCK</h2>
                 <p className="my-4 text-dark-green">
@@ -262,8 +258,12 @@ const ContactUsPage = () => {
               </Col>
             </Row>
           </Col>
-          <Col>
-            <Image src={contactUsImg} alt="contactUsImg" fluid />
+          <Col lg={6} className="d-none d-lg-block">
+            <img
+              src={contactUsImg}
+              alt="contactUsImg"
+              style={{ objectFit: "cover" }}
+            />
           </Col>
         </Row>
       </Container>

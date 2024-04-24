@@ -30,9 +30,7 @@ const CompanyCulture = () => {
   return (
     <>
       <Container
-        fluid
-        className="text-center text-dark-green text-bg-light-grey
-        grey-sec-space"
+        className="text-center text-dark-green light-sec-space"
       >
         <Row className="justify-content-md-center mb-5">
           <Col>
@@ -41,7 +39,7 @@ const CompanyCulture = () => {
         </Row>
         <Row className="justify-content-md-center">
           {cultures.map((culture) => (
-            <Col key={culture.id}>
+            <Col key={culture.id} className="px-5">
               <Feature feature={culture} />
             </Col>
           ))}

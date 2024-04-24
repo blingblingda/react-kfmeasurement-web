@@ -7,10 +7,10 @@ interface FeatureProps {
 const Feature = ({ feature }: FeatureProps) => {
   return (
     <>
-      <div className="text-center ">
+      <div className="text-center fw-bold">
         {React.createElement(feature.icon, { size: "40px" })}
         <p className="mt-3">{feature.text}</p>
-        <p>{feature.description}</p>
+        <p className="fw-normal">{feature.description}</p>
       </div>
     </>
   );

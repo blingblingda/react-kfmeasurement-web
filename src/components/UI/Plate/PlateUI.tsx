@@ -5,11 +5,25 @@ interface PlateProps {
   imgSrc: string;
   description: string;
   isReverse: boolean;
+  isBgWhite: boolean;
 }
 
-const PlateUI = ({ title, imgSrc, description, isReverse }: PlateProps) => {
+const PlateUI = ({
+  title,
+  imgSrc,
+  description,
+  isReverse,
+  isBgWhite,
+}: PlateProps) => {
+  let defaultBg = "";
+  if (isBgWhite) {
+    defaultBg = "bg-white text-dark-green";
+  } else {
+    defaultBg = "bg-light-grey text-dark-green";
+  }
+
   return (
-    <Container className="grey-sec-space">
+    <Container className="light-sec-space">
       <Row className="g-0">
         {isReverse ? (
           <>
@@ -21,7 +35,7 @@ const PlateUI = ({ title, imgSrc, description, isReverse }: PlateProps) => {
                 alt="card"
               />
             </Col>
-            <Col className="bg-white text-dark-green" lg={4}>
+            <Col className={defaultBg} lg={4}>
               <div className="p-5">
                 <div>
                   <h3 className="display-6  mb-4">{title}</h3>
@@ -34,7 +48,7 @@ const PlateUI = ({ title, imgSrc, description, isReverse }: PlateProps) => {
           </>
         ) : (
           <>
-            <Col className="bg-white text-dark-green" lg={4}>
+            <Col className={defaultBg} lg={4}>
               <div className="p-5">
                 <div>
                   <h3 className="display-6  mb-4">{title}</h3>
