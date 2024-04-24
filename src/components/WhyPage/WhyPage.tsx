@@ -10,7 +10,7 @@ import CertificateCarousel from "./CertificateCarousel";
 
 const WhyPage = () => {
   return (
-    <div className="bg-light-grey">
+    <div className="bg-white">
       <Header />
       <main>
         <WhyBanner />

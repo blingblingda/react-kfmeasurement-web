@@ -19,13 +19,14 @@ const strategyList = [
 
 const Strategy = () => {
   return (
-    <div className="bg-light-grey py-4">
+    <div className=" py-4">
       {strategyList.map((item, index) => (
         <PlateUI
           title={item.title}
           imgSrc={item.imgSrc}
           description={item.description}
           isReverse={index % 2 !== 0}
+          isBgWhite={false}
         />
       ))}
     </div>

@@ -20,6 +20,7 @@ const AboutMainSection = ({ aboutSrc }: AboutMainSectionProps) => {
           imgSrc={item.pic}
           description={item.description}
           isReverse={index % 2 !== 0}
+          isBgWhite={true}
         />
       ))}
     </>
