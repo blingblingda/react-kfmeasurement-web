@@ -1,5 +1,5 @@
 import CarouselUI from "../UI/Carousel/CarouselUI";
-import itemList from "../UI/ItemList/itemList";
+import itemList from "../../data/itemList";
 
 const ProductCenter = () => {
   return (

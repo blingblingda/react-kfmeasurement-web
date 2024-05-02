@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import StarCard from "../UI/Card/StarCard";
-import Items from "../UI/ItemList/itemList";
+import Items from "../../data/itemList";
 
 const StarProducts = () => {
   const starProducts = Items.slice(6, 10);

@@ -1,8 +1,8 @@
-import caseImg1 from "../../../assets/case1.png";
-import caseImg2 from "../../../assets/case2.png";
-import caseImg3 from "../../../assets/case3.png";
-import caseImg4 from "../../../assets/case4.png";
-import { CaseFull } from "../../../models/product";
+import caseImg1 from "../assets/case1.png";
+import caseImg2 from "../assets/case2.png";
+import caseImg3 from "../assets/case3.png";
+import caseImg4 from "../assets/case4.png";
+import { CaseFull } from "../models/product";
 
 const casesList: CaseFull[] = [
   {

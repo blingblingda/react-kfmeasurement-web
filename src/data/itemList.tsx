@@ -1,19 +1,19 @@
-import P_01 from "../../../assets/products/p01.jpg";
-import P_02 from "../../../assets/products/p02.png";
-import P_03 from "../../../assets/products/p03.png";
-import P_04 from "../../../assets/products/p04.jpg";
-import P_05 from "../../../assets/products/p05.jpg";
-import P_06 from "../../../assets/products/p06.jpg";
-import P_07 from "../../../assets/products/p07.jpg";
-import P_08 from "../../../assets/products/p08.jpg";
-import P_09 from "../../../assets/products/p09.png";
-import P_10 from "../../../assets/products/p10.png";
-import P_11 from "../../../assets/products/p11.png";
-import P_12 from "../../../assets/products/p12.png";
-import P_13 from "../../../assets/products/p13.png";
-import P_14 from "../../../assets/products/p14.png";
-import P_15 from "../../../assets/products/p15.jpg";
-import { ProductFull } from "../../../models/product";
+import P_01 from "../assets/products/p01.jpg";
+import P_02 from "../assets/products/p02.png";
+import P_03 from "../assets/products/p03.png";
+import P_04 from "../assets/products/p04.jpg";
+import P_05 from "../assets/products/p05.jpg";
+import P_06 from "../assets/products/p06.jpg";
+import P_07 from "../assets/products/p07.jpg";
+import P_08 from "../assets/products/p08.jpg";
+import P_09 from "../assets/products/p09.png";
+import P_10 from "../assets/products/p10.png";
+import P_11 from "../assets/products/p11.png";
+import P_12 from "../assets/products/p12.png";
+import P_13 from "../assets/products/p13.png";
+import P_14 from "../assets/products/p14.png";
+import P_15 from "../assets/products/p15.jpg";
+import { ProductFull } from "../models/product";
 
 const Items: ProductFull[] = [
   {

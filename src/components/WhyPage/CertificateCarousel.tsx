@@ -1,4 +1,4 @@
-import certificates from "../UI/ItemList/certificateList";
+import certificates from "../../data/certificateList";
 import CarouselUI from "../UI/Carousel/CarouselUI";
 
 const CertificateCarousel = () => {

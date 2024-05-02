@@ -2,9 +2,9 @@ import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowUp } from "react-bootstrap-icons";
-import HeaderProductsList from "../../UI/ItemList/headerProductList";
+import HeaderProductsList from "../../../data/headerProductList";
 import { HeaderProduct } from "../../../models/product";
-import casesList from "../../UI/ItemList/caseList";
+import casesList from "../../../data/caseList";
 
 const Footer = () => {
   const products: HeaderProduct[] = HeaderProductsList;

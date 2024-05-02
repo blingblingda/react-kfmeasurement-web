@@ -3,7 +3,7 @@ import Header from "../Layout/Header/Header";
 import Footer from "../Layout/Footer/Footer";
 import { Col, Container, Row, Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import contactUsImg from "./contactUsImg.png";
+import contactUsImg from "../../assets/contactUsImg.png";
 // import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 

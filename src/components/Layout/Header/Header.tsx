@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import WebButton from "../../UI/Button/WebButton";
 import HeaderCard from "../../UI/Card/HeaderCard";
-import HeaderProductsList from "../../UI/ItemList/headerProductList";
-import casesList from "../../UI/ItemList/caseList";
+import HeaderProductsList from "../../../data/headerProductList";
+import casesList from "../../../data/caseList";
 import { HeaderProduct } from "../../../models/product";
 import "./Header.scss";
 

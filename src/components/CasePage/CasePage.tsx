@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Col, Container } from "react-bootstrap";
 import Footer from "../Layout/Footer/Footer";
 import Header from "../Layout/Header/Header";
-import casesList from "../UI/ItemList/caseList";
+import casesList from "../../data/caseList";
 import { CaseFull } from "../../models/product";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";

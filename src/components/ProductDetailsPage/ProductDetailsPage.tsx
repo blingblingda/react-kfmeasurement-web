@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Col, Container, Row, Card, Stack } from "react-bootstrap";
 import Footer from "../Layout/Footer/Footer";
 import Header from "../Layout/Header/Header";
-import Items from "../UI/ItemList/itemList";
+import Items from "../../data/itemList";
 import WebButton from "../UI/Button/WebButton";
 import ProductFeature from "./ProductFeature";
 import ProductTab from "./ProductTab";
@@ -24,7 +24,7 @@ const ProductDetailsPage = () => {
     navigate("/");
   };
   const handleProductsClick: () => void = () => {
-    navigate("/products", { state: { category: ""} });
+    navigate("/products", { state: { category: "" } });
   };
   const handleContactClick: () => void = () => {
     navigate("/");
@@ -157,7 +157,10 @@ const ProductDetailsPage = () => {
           </Row>
         </Container>
         <ProductFeature />
-        <ProductTab aboutSrc={product.aboutSrc} productMD={product.detailsMD || "/error.md"} />
+        <ProductTab
+          aboutSrc={product.aboutSrc}
+          productMD={product.detailsMD || "/error.md"}
+        />
       </main>
       <Container className="py-5">
         <small

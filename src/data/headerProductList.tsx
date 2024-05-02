@@ -1,9 +1,9 @@
-import productSeriesImg1 from "../../../assets/productSeries1.png";
-import productSeriesImg2 from "../../../assets/productSeries2.png";
-import productSeriesImg3 from "../../../assets/productSeries3.png";
-import productSeriesImg4 from "../../../assets/productSeries4.png";
-import productSeriesImg5 from "../../../assets/productSeries5.jpg";
-import { HeaderProduct } from "../../../models/product";
+import productSeriesImg1 from "../assets/productSeries1.png";
+import productSeriesImg2 from "../assets/productSeries2.png";
+import productSeriesImg3 from "../assets/productSeries3.png";
+import productSeriesImg4 from "../assets/productSeries4.png";
+import productSeriesImg5 from "../assets/productSeries5.jpg";
+import { HeaderProduct } from "../models/product";
 
 const HeaderProductsList: HeaderProduct[] = [
   {

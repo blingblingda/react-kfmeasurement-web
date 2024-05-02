@@ -1,4 +1,4 @@
-import { AboutPictures } from "../UI/ItemList/productAboutList";
+import { AboutPictures } from "../../data/productAboutList";
 import PlateUI from "../UI/Plate/PlateUI";
 
 interface AboutMainSectionProps {

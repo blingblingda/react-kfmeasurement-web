@@ -5,7 +5,7 @@ import Header from "../Layout/Header/Header";
 import Footer from "../Layout/Footer/Footer";
 import ProductList from "./ProductList";
 import ProductFilter from "./ProductFilter";
-import Items from "../UI/ItemList/itemList";
+import Items from "../../data/itemList";
 import { ProductFull } from "../../models/product";
 
 const ProductListPage = () => {

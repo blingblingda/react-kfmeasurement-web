@@ -1,4 +1,4 @@
-import logos from "../UI/ItemList/logoList";
+import logos from "../../data/logoList";
 import CarouselUI from "../UI/Carousel/CarouselUI";
 
 const Partnership = () => {
