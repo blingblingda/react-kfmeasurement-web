@@ -27,7 +27,7 @@ const ProductDetailsPage = () => {
     navigate("/products", { state: { category: "" } });
   };
   const handleContactClick: () => void = () => {
-    navigate("/");
+    navigate("/contact-us");
   };
 
   return (
@@ -100,7 +100,7 @@ const ProductDetailsPage = () => {
                     </svg>
                   </div>
                   <div className="mx-3" style={{ fontSize: "11px" }}>
-                    Find a trusted installer in your area
+                    Contact our team
                   </div>
                 </div>
                 <div className="d-flex justify-content-start align-items-center">
@@ -122,7 +122,7 @@ const ProductDetailsPage = () => {
                     </svg>
                   </div>
                   <div className="mx-3" style={{ fontSize: "11px" }}>
-                    Organise an installer to quote for the job
+                    Organise a quote for the job
                   </div>
                 </div>
                 <div className="d-flex justify-content-start align-items-center">
