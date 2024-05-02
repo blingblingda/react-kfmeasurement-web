@@ -6,19 +6,19 @@ const ProductCenter = () => {
     <>
       <CarouselUI
         items={itemList}
-        title={"ProductCenter"}
+        title={"Product Center"}
         groupSize={1}
         sizeControlClass={"single-slider"}
       />
       <CarouselUI
         items={itemList}
-        title={"ProductCenter"}
+        title={"Product Center"}
         groupSize={2}
         sizeControlClass={"double-sliders"}
       />
       <CarouselUI
         items={itemList}
-        title={"ProductCenter"}
+        title={"Product Center"}
         groupSize={3}
         sizeControlClass={"triple-sliders"}
       />

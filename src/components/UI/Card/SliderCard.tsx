@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import { ProductFull } from "../../../models/product";
 
@@ -6,22 +7,25 @@ interface SliderCardProps {
 }
 
 const SliderCard = ({ slide }: SliderCardProps) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/products/${slide.id}`);
+  };
+
   return (
-    <Card className="boarder border-white" style={{ width: "22rem" }}>
-      <a
-        className="text-dark-green text-decoration-none"
-        href="http://www.google.com"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Card.Img
-          src={slide.imgSrc}
-          style={{ width: "20rem", height: "15rem" }}
-        />
-        <Card.Body style={{ height: "4rem" }}>
-          <Card.Text>{slide.name}</Card.Text>
-        </Card.Body>
-      </a>
+    <Card
+      className="boarder border-white text-dark-green"
+      style={{ width: "22rem", cursor: "pointer" }}
+      onClick={handleClick}
+    >
+      <Card.Img
+        src={slide.imgSrc}
+        style={{ width: "20rem", height: "15rem" }}
+      />
+      <Card.Body style={{ height: "4rem" }}>
+        <Card.Text>{slide.name}</Card.Text>
+      </Card.Body>
     </Card>
   );
 };
