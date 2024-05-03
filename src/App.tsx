@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
 import ProductListPage from "./components/ProductListPage/ProductListPage";
 import ProductDetailsPage from "./components/ProductDetailsPage/ProductDetailsPage";
@@ -8,7 +8,7 @@ import ContactUsPage from "./components/ContactUsPage/ContactUsPage";
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductListPage />} />
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/why-us" element={<WhyPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
