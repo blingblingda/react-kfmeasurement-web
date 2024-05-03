@@ -18,6 +18,10 @@ const Header = () => {
     navigate("/");
   };
 
+  const handleWhyUs: () => void = () => {
+    navigate("/why-us");
+  };
+
   const handleContact: () => void = () => {
     navigate("/contact-us");
   };
@@ -57,7 +61,7 @@ const Header = () => {
               ))}
             </NavDropdown>
             <Nav.Link
-              href="/why-us"
+              onClick={handleWhyUs}
               className="text-dark-green link-style mx-5"
             >
               Why KFCK
