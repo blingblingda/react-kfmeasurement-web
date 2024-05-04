@@ -5,19 +5,23 @@ import ProductDetailsPage from "./components/ProductDetailsPage/ProductDetailsPa
 import CasePage from "./components/CasePage/CasePage";
 import WhyPage from "./components/WhyPage/WhyPage";
 import ContactUsPage from "./components/ContactUsPage/ContactUsPage";
+import ScrollToTop from "./components/Utils/ScrollToTop";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductListPage />} />
-        <Route path="/products/:productId" element={<ProductDetailsPage />} />
-        <Route path="/:caseName" element={<CasePage />} />
-        <Route path="/why-us" element={<WhyPage />} />
-        <Route path="/contact-us" element={<ContactUsPage />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/products" element={<ProductListPage />} />
+          <Route path="/products/:productId" element={<ProductDetailsPage />} />
+          <Route path="/:caseName" element={<CasePage />} />
+          <Route path="/why-us" element={<WhyPage />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 

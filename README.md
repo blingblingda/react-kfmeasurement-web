@@ -1,75 +1,85 @@
-# Getting Started with Create React App
+<a href="https://www.kfmeasurement.site/"><img src="https://i.postimg.cc/wjTHX7wn/Brown-and-White-Minimalist-Interior-Design-Presentation-1.png" border="0"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub last commit](https://img.shields.io/github/last-commit/blingblingda/react-kfmeasurement-web)
+![GitHub issues](https://img.shields.io/github/issues-raw/blingblingda/react-kfmeasurement-web)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/blingblingda/react-kfmeasurement-web)
+![GitHub](https://img.shields.io/github/license/blingblingda/react-kfmeasurement-web)
 
-## Available Scripts
+## Overview 🌐
 
-In the project directory, you can run:
+Our website serves as a comprehensive platform to introduce our company's products, culture, and services to the global market, especially targeting industrial overseas clients. Here, visitors can access detailed product information, our heritage, corporate culture, and ways to connect with us directly.
 
-### `npm start`
+## 🧰 Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div align="center">
+  <code><img width="50" src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="React" title="React"/></code>
+  <code><img width="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201" alt="TypeScript" title="TypeScript"/></code>
+  <code><img width="50" src="https://cdn-images-1.medium.com/max/480/0*vwwzh7hfQ_ZxQvFw.png" alt="Node.js" title="Node.js"/></code>
+  <code><img width="50" src="https://static-00.iconduck.com/assets.00/npm-icon-1024x1024-lgwc8aqk.png" alt="npm" title="npm"/></code>
+  <code><img width="50" src="https://avatars.githubusercontent.com/u/2918581?v=4" alt="BootStrap" title="BootStrap"/></code>
+  <code><img width="50" src="https://static-00.iconduck.com/assets.00/sass-icon-2048x2048-js3fulee.png" alt="Sass" title="Sass"/></code>
+  <code><img width="50" src="https://www.icon0.com/wp-content/uploads/2023/01/canva.com-7.png" alt="Canva" title="Canva"/></code>
+  <code><img width="50" src="https://www.emailjs.com/logo.png" alt="Emailjs" title="Emailjs"/></code>
+  <code><img width="50" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" alt="VSCode" title="VSCode"/></code>
+  <code><img width="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" alt="Git" title="Git"/></code>
+  <code><img width="50" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" title="Github"/></code>
+  <code><img width="50" src="https://banner2.cleanpng.com/20181201/ib/kisspng-portable-network-graphics-trello-scalable-vector-g-5c025368ae6bb9.4395252315436562967144.jpg" alt="Trello" title="Trello"/></code>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🖥️ Front-end
 
-### `npm test`
+Built with React, TypeScript and Bootstrap, the kfmeasurement front-end is a masterpiece of modern web development, featuring a responsive UI that's both beautiful and functional. No registration needed. Simply visit [Our Website](https://www.kfmeasurement.site/) to start exploring:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🌟 Key Features
 
-### `npm run build`
+- **Homepage:** The central hub of the website, designed to give visitors an immediate sense of what the company stands for and what it offers. 🚦
+- **Product List:** A comprehensive overview of the products available, each item is a clickable gateway to more detailed information. 🗃
+- **Product Details:** These pages delve deeper into individual products, highlighting features, benefits, and potential applications. 🧩
+- **Case Studies:** Real-world examples of how the company’s products have been successfully implemented, providing credibility and showcasing versatility. 🏭
+- **Why Us:** A persuasive argument for why this company stands out in a crowded market, focusing on unique selling points and competitive advantages. 👥
+- **Contact Us:** A crucial page facilitating direct communication, inviting business inquiries, and fostering connections. 📧
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🎨 Design Specification
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Our website leverages the robust and responsive framework of [Bootstrap](https://getbootstrap.com/docs/) for styling, ensuring consistent and professional aesthetics across all devices. Additionally, we utilize various existing components from [React Bootstrap](https://react-bootstrap.github.io/components/alerts/) to enhance the user interface, maintaining high usability and design standards.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Installation
 
-### `npm run eject`
+Follow these steps to set up your local development environment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Front-end
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone git@github.com:blingblingda/react-kfmeasurement-web.git
+cd react-kfmeasurement-web
+npm install
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 👩‍💻👩‍💻 Authors
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Belinda Shan](https://www.linkedin.com/in/belinda-shan-126bs414/)
 
-## Learn More
+- [Yu Ji](https://www.linkedin.com/in/yu-ji-785718113/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Code Splitting
+If you have a suggestion that would make this better, please fork the repository and create a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Don't forget to give the project a star! Thanks again!
 
-### Analyzing the Bundle Size
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🌟 Star Us!
 
-### Making a Progressive Web App
+Like the project? Star us on GitHub!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-## Author
-
-Belinda
-Sophia
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
