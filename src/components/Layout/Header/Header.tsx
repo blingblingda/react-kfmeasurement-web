@@ -35,13 +35,26 @@ const Header = () => {
         >
           KFCK
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+          >
+            <rect x="1" y="3" width="18" height="1"></rect>
+            <rect x="1" y="7" width="18" height="1"></rect>
+            <rect x="1" y="11" width="18" height="1"></rect>
+            <rect x="1" y="15" width="18" height="1"></rect>
+          </svg>
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
             <NavDropdown
               title="Products"
               id="basic-nav-dropdown"
-              className="mx-5 nav-dropdown-title custom-nav-dropdown"
+              className="nav-dropdown-title custom-nav-dropdown"
             >
               {products.map((product) => (
                 <NavDropdown.Item key={product.id}>
@@ -52,7 +65,7 @@ const Header = () => {
             <NavDropdown
               title="Cases"
               id="basic-nav-dropdown"
-              className="mx-5 nav-dropdown-title custom-nav-dropdown"
+              className="nav-dropdown-title custom-nav-dropdown"
             >
               {cases.map((product) => (
                 <NavDropdown.Item key={product.id}>
@@ -62,15 +75,22 @@ const Header = () => {
             </NavDropdown>
             <Nav.Link
               onClick={handleWhyUs}
-              className="text-dark-green link-style mx-5"
+              className="text-dark-green link-style"
             >
               Why KFCK
             </Nav.Link>
           </Nav>
+          <WebButton
+            className={"contactBtn"}
+            btnStyle="dark"
+            onClick={handleContact}
+          >
+            Contact Us
+          </WebButton>
+          <a className="contactLink" onClick={handleContact}>
+            Contact Us
+          </a>
         </Navbar.Collapse>
-        <WebButton btnStyle="dark" onClick={handleContact}>
-          Contact Us
-        </WebButton>
       </Container>
     </Navbar>
   );
